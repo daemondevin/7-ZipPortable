@@ -711,28 +711,6 @@ Function GetLNG
 	EndLNG:
 	Exch $0
 FunctionEnd
-
-;= CUSTOM
-;= ################
-${SegmentFile}
-${Segment.OnInit}
-	StrCmpS $Bit 32 +6
-	IfFileExists `${EXE64}` 0 +5
-	SetRegView 64
-	StrCpy $APP ${APP64}
-	System::Call `${SET64}`
-	Goto +3
-	StrCpy $APP ${APP}
-	System::Call `${SET32}`
-!macroend
-!macro PostExecWaitCommand
-	StrCmpS $SecondaryLaunch true +3
-	Push 7zG.exe
-	Call CloseX
-!macroend
-!macro ProExecInit
-	StrCpy $ProgramExecutable $App\7zFM.exe
-!macroend
 Function Elevate
 	StrCmpS $SecondaryLaunch true 0 +2
 	Return
@@ -761,6 +739,36 @@ Function Elevate
 			"$(LauncherAdminError)$\r$\n$(LauncherNotAdminLimitedFunctionality)"
 	${EndSwitch}
 FunctionEnd
+Function PAL:LanguageLCID
+	IfFileExists `${REG}` 0 +3
+	ReadINIStr $0 `${REG}` `${LANG}` `"${KEY}"`
+	Goto +2
+	ReadINIStr $0 `${DEFREG}` `${LANG}` `"${KEY}"`
+	${GetLCID} $0 $0
+	${SetEnvironmentVariable} PAL:LanguageLCID $0
+FunctionEnd
+
+;= CUSTOM
+;= ################
+${SegmentFile}
+${Segment.OnInit}
+	StrCmpS $Bit 32 +6
+	IfFileExists `${EXE64}` 0 +5
+	SetRegView 64
+	StrCpy $APP ${APP64}
+	System::Call `${SET64}`
+	Goto +3
+	StrCpy $APP ${APP}
+	System::Call `${SET32}`
+!macroend
+!macro PostExecWaitCommand
+	StrCmpS $SecondaryLaunch true +3
+	Push 7zG.exe
+	Call CloseX
+!macroend
+!macro ProExecInit
+	StrCpy $ProgramExecutable $App\7zFM.exe
+!macroend
 !macro RunAsAdmin
 	Push 7zFM.exe
 	Call Find::Process
@@ -797,14 +805,6 @@ FunctionEnd
 		${MsgBox}
 	${EndIf}
 !macroend
-Function PAL:LanguageLCID
-	IfFileExists `${REG}` 0 +3
-	ReadINIStr $0 `${REG}` `${LANG}` `"${KEY}"`
-	Goto +2
-	ReadINIStr $0 `${DEFREG}` `${LANG}` `"${KEY}"`
-	${GetLCID} $0 $0
-	${SetEnvironmentVariable} PAL:LanguageLCID $0
-FunctionEnd
 !macro Lang
 	${GetParent} `$EXEDIR` $0
 	IfFileExists `${PFM}` 0 +6
@@ -900,53 +900,62 @@ ${SegmentUnload}
 	${EndIf}
 !macroend
 !macro PreReg
-	StrCpy $0 1
-	${Do}
-		ClearErrors
-		${ReadLauncherConfig} $1 Associations $0
-		${IfThen} ${Errors} ${|} ${ExitDo} ${|}
-		${GetIconIndex} $1 $2
-		${If} $2 != error
-			StrCpy $3 1
-			${ReadRuntimeData} $4 Associations $3
-			StrCmp $4 "" +3
-			IntOp $3 $3 + 1
-			Goto -6
-			${WriteRuntimeData} Associations $3 $1
-			${Registry::BackupKey} `${CLS}\.$1` $2
-			${Registry::BackupKey} `${CLS}\${APP}.$1` $2
-			${Registry::BackupKey} `${EXT}\.$1` $2
-			${Registry::BackupKey} `${EXTS}\.$1` $2
-		${EndIf}
-		IntOp $0 $0 + 1
-	${Loop}
+	${ReadUserConfig} $0 Associations
+	${If} $0 == true
+		StrCpy $0 1
+		${Do}
+			ClearErrors
+			${ReadLauncherConfig} $1 Associations $0
+			${IfThen} ${Errors} ${|} ${ExitDo} ${|}
+			${GetIconIndex} $1 $2
+			${If} $2 != error
+				StrCpy $3 1
+				${ReadRuntimeData} $4 Associations $3
+				StrCmp $4 "" +3
+				IntOp $3 $3 + 1
+				Goto -6
+				${WriteRuntimeData} Associations $3 $1
+				${Registry::BackupKey} `${CLS}\.$1` $2
+				${Registry::BackupKey} `${CLS}\${APP}.$1` $2
+				${Registry::BackupKey} `${EXT}\.$1` $2
+				${Registry::BackupKey} `${EXTS}\.$1` $2
+			${EndIf}
+			IntOp $0 $0 + 1
+		${Loop}
+	${EndIf}
 !macroend
 !macro UnPreRegWrite
-	StrCpy $0 1
-	${Do}
-		ClearErrors
-		${ReadRuntimeData} $1 Associations $0
-		${IfThen} ${Errors} ${|} ${ExitDo} ${|}
-		${GetIconIndex} $1 $2
-		WriteRegStr HKCU `${CL}\.$1` "" ${APP}.$1
-		WriteRegStr HKCU `${D}` "" `"${ICO}",$2`
-		WriteRegStr HKCU `${O}` "" `${ARC}`
-		WriteRegStr HKCU `${O}` Icon `${EXE}`
-		WriteRegStr HKCU `${C}` "" `"${EXE}" "%1"`
-		IntOp $0 $0 + 1
-	${Loop}
+	${ReadUserConfig} $0 Associations
+	${If} $0 == true
+		StrCpy $0 1
+		${Do}
+			ClearErrors
+			${ReadRuntimeData} $1 Associations $0
+			${IfThen} ${Errors} ${|} ${ExitDo} ${|}
+			${GetIconIndex} $1 $2
+			WriteRegStr HKCU `${CL}\.$1` "" ${APP}.$1
+			WriteRegStr HKCU `${D}` "" `"${ICO}",$2`
+			WriteRegStr HKCU `${O}` "" `${ARC}`
+			WriteRegStr HKCU `${O}` Icon `${EXE}`
+			WriteRegStr HKCU `${C}` "" `"${EXE}" "%1"`
+			IntOp $0 $0 + 1
+		${Loop}
+	${EndIf}
 !macroend
 !macro PostReg
-	StrCpy $0 1
-	${Do}
-		ClearErrors
-		${ReadRuntimeData} $1 Associations $0
-		${IfThen} ${Errors} ${|} ${ExitDo} ${|}
-		${Registry::RestoreBackupKey} `${CLS}\.$1` $2
-		${Registry::RestoreBackupKey} `${CLS}\${APP}.$1` $2
-		${Registry::RestoreBackupKey} `${EXT}\.$1` $2
-		${Registry::RestoreBackupKey} `${EXTS}\.$1` $2
-		${Registry::DeleteKeyEmpty} `${EXTS}` $2
-		IntOp $0 $0 + 1
-	${Loop}
+	${ReadUserConfig} $0 Associations
+	${If} $0 == true
+		StrCpy $0 1
+		${Do}
+			ClearErrors
+			${ReadRuntimeData} $1 Associations $0
+			${IfThen} ${Errors} ${|} ${ExitDo} ${|}
+			${Registry::RestoreBackupKey} `${CLS}\.$1` $2
+			${Registry::RestoreBackupKey} `${CLS}\${APP}.$1` $2
+			${Registry::RestoreBackupKey} `${EXT}\.$1` $2
+			${Registry::RestoreBackupKey} `${EXTS}\.$1` $2
+			${Registry::DeleteKeyEmpty} `${EXTS}` $2
+			IntOp $0 $0 + 1
+		${Loop}
+	${EndIf}
 !macroend
