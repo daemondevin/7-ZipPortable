@@ -22,15 +22,15 @@ Visit the [7-Zip Homepage](http://7-zip.org/).
 
 ## Support
 
-To recompile this PAF you must use my version of the [PortableApps.com Launcher][S1].
+To recompile this PAF you must use my variant of the PortableApps.com Launcher, [Pac-Man][S1].
 
- [S1]: https://github.com/demondevin/portableapps.comlauncher
+ [S1]: https://github.com/daemondevin/pac-man
 
 ## Download
 
 All downloads available in the [Releases section][D1]. This portable application was packaged using a modified version of the [PortableApps.com][D2] Launcher.
 
- [D1]: https://github.com/demondevin/7-ZipPortable/releases/latest
+ [D1]: https://github.com/daemondevin/7-ZipPortable/releases/latest
  [D2]: http//portableapps.com/
 
 ## Features
@@ -88,17 +88,17 @@ All downloads available in the [Releases section][D1]. This portable application
 * 7-Zip Portable is a redistribution of the
   [7-Zip][C1] archive manager developed by [Igor Pavlov][C2].
 * [PortableApps.com Suite][R1] by [PortableApps.com][D2].
-* [PortableApps.com Launcher][S1] developed by [demon.devin][C3].
+* [PortableApps.com Launcher][S1] developed by [daemon.devin][C3].
 
  [C1]: http://7-zip.org/
  [C2]: https://en.wikipedia.org/wiki/Igor_Pavlov_(programmer)
- [C3]: https://github.com/demondevin
+ [C3]: https://github.com/daemondevin
 
 ## License
 
 * Portable application code released under [the MIT license][L1].
 * 7-Zip is governed under the [GNU LGPL][L2] License.
 
- [L1]: https://raw.githubusercontent.com/demondevin/7-ZipPortable/master/LICENSE
+ [L1]: https://raw.githubusercontent.com/daemondevin/7-ZipPortable/master/LICENSE
  [L2]: http://7-zip.org/license.txt
  
