@@ -2,8 +2,8 @@
 ;       : Tomas Tomasek
 ;  9.07 : Pavel Devečka
 ;  9.38 beta : 2015-01-11 : Roman Horváth
-;
-;
+;  24.02 : Milan Šalka
+;  26.03 : 2026-09-07 : Patrik Špaňo (Pa4k)
 ;
 ;
 ;
@@ -38,15 +38,15 @@ Pozastavené
 Ste si istý, že chcete akciu zrušiť?
 500
 &Súbor
-&Upraviť
-&Zobraziť
+&Úpravy
+&Zobrazenie
 &Obľúbené
 &Nástroje
 &Pomocník
 540
 &Otvoriť
-O&tvoriť vnútri
-Ot&voriť externe
+Otvoriť &vnútri
+Otvoriť &externe
 &Zobraziť
 &Upraviť
 &Premenovať
@@ -63,10 +63,11 @@ Vytvoriť priečinok
 Vytvoriť súbor
 Uko&nčiť
 Odkaz...
+&Alternatívne streamy
 600
-Označiť všetko
+Označiť &všetko
 Odznačiť všetko
-Invertovať označenie
+&Invertovať výber
 Označiť...
 Odznačiť...
 Označiť podľa typu
@@ -92,32 +93,34 @@ Archív
 Veľké ikony
 Textový popis pod ikonami
 800
-Pridať priečinok medzi obľúbené ako
+&Pridať priečinok medzi obľúbené ako
 Záložka
 900
-N&astavenia...
-&Skúšobný test
+&Nastavenia...
+&Benchmark
+910
+Zmazať dočasné súbory...
 960
-&Obsah pomocníka...
-O p&rograme 7-Zip
+Obsah &pomocníka...
+&O programe 7-Zip
 1003
 Cesta
-Meno
+Názov
 Prípona
 Priečinok
 Veľkosť
 Veľkosť po kompresii
 Atribúty
 Vytvorený
-Sprístupnený
-Zmenený
-Jednoliaty
+Otvorený
+Upravený
+Kompaktný (Pevný)
 Komentovaný
 Zašifrovaný
-Rozdelený predtým
-Rozdelený potom
+Rozdelený pred
+Rozdelený po
 Slovník
-CRC
+
 Typ
 Anti
 Metóda
@@ -128,7 +131,7 @@ Skupina
 Blok
 Komentár
 Pozícia
-Predpona cesty
+Prefix cesty
 Priečinky
 Súbory
 Verzia
@@ -186,20 +189,28 @@ Kódová stránka
 
 
 Veľkosť zakončenia
-Veľkosť vloženého ústrižku
+Veľkosť vloženého prvku
 Odkaz
 Pevný odkaz
 iNode
+
+Len na čítanie
+
+Kopírovať odkaz
+
+
+Metadáta zmenené
 2100
 Nastavenia
 Jazyk
 Jazyk:
 Editor
-Editor:
+&Editor:
 Vyhľadávač rozdielov (Diff):
 2200
 Systém
 Asociovať 7-Zip s vybranými typmi súborov:
+Všetci používatelia
 2301
 Integrovať 7-Zip do kontextovej ponuky
 Kaskádová kontextová ponuka
@@ -227,13 +238,13 @@ Po&užiť len pre vymeniteľné jednotky
 Vyberte priečinok pre dočasné súbory.
 2500
 Nastavenia
-Ukázať položku ".."
-Ukázať skutočné ikony súborov
-Ukázať systémovú ponuku
-Označiť celý riadok
-Zobraziť čiary mriežky
+Zobraziť položku ".."
+Zobraziť skutočné ikony súborov
+Zobraziť systémovú ponuku
+&Označiť celý riadok
+Zobraziť čiary &mriežky
 Otvoriť položku jednoduchým kliknutím
-Alternatívny režim výberu
+&Alternatívny režim výberu
 Použitie veľkých stránok pamäti
 2900
 O programe 7-Zip
@@ -256,12 +267,25 @@ Operácia nemôže byť vykonaná v priečinku, ktorý má dlhú cestu.
 Musíte vybrať jeden súbor
 Musíte vybrať jeden alebo viac súborov
 Priveľa položiek
+Súbor nie je možné otvoriť ako {0} archív
+Súbor je otvorený ako {0} archív
+Archív je otvorený s ofsetom
 3300
 Rozbaľovanie
 Komprimovanie
-Výsledok testovania
+Testovanie
 Otváranie...
 Prehľadávanie...
+Odstraňovanie
+3320
+Pridávanie
+Aktualizovanie
+Analyzovanie
+Replikovanie
+Repackovanie
+Preskakovanie
+Mazanie
+Vytváranie hlavičky
 3400
 Rozbaliť
 Rozbaliť do:
@@ -282,6 +306,9 @@ Automaticky premenovať existujúce súbory
 3430
 Eliminovať duplikáty koreňového priečinka
 Obnoviť práva súboru
+3440
+Propagovať stream Zone.Id:
+Pre súbory balíka Office
 3500
 Potvrdenie nahradenia súboru
 Cieľový priečinok už obsahuje rozbaľovaný súbor.
@@ -306,6 +333,7 @@ Neočakávaný koniec údajov
 Za zužitkovateľnými údajmi sa nachádzajú ďalšie údaje
 Nie je to archív
 Chybné hlavičky
+Nesprávne heslo
 3763
 Začiatok archívu je nedostupný
 Začiatok archívu nie je potvrdený
@@ -348,7 +376,7 @@ Vytvoriť samorozbaľovací archív
 Komprimovať zdieľané súbory
 Šifrovanie
 Metóda šifrovania:
-Zašifrovať mená súborov
+Zašifrovať názvy súborov
 Pamäť potrebná na kompresiu:
 Pamäť potrebná na dekompresiu:
 Vymazať súbory po kompresii
@@ -374,6 +402,17 @@ Prehľadávať
 Všetky súbory
 Nejednoliaty
 Jednoliaty
+4080
+Čas
+Presnosť časovej pečiatky:
+Uložiť čas úpravy
+Uložiť čas vytvorenia
+Uložiť čas posledného prístupu
+Nastaviť čas archívu podľa času najnovšieho súboru
+Nemeniť čas posledného prístupu zdrojových súborov
+4090
+sek
+ns
 6000
 Kopírovať
 Presunúť
@@ -400,8 +439,8 @@ Systém nemôže presunúť do koša súbor s dlhou cestou
 6300
 Vytvoriť priečinok
 Vytvoriť súbor
-Meno priečinka:
-Meno súboru:
+Názov priečinka:
+Názov súboru:
 Nový priečinok
 Nový súbor
 Chyba pri vytváraní priečinka
@@ -432,8 +471,8 @@ Odstrániť
 Informácie
 7300
 Rozdeliť súbor
-&Rozdeliť na:
-Roz&deliť na zväzky bajtov:
+&Rozdeliť do:
+Rozdeliť na &zväzky bajtov:
 Rozdeľovanie...
 Potvrdiť rozdeľovanie.
 Ste si istý, že chcete rozdeliť súbor na {0} zväzkov?
@@ -453,25 +492,42 @@ Informácie o kontrolnom súčte
 CRC súčet pre údaje:
 CRC súčet pre údaje a názvy:
 7600
-Skúšobný test
-Použitá pamäť:
+Test výkonu
+Využitie pamäte:
 Komprimovanie
 Rozbaľovanie
-Hodnotenie
+Skóre
 Celkové hodnotenie
 Aktuálne
 Výsledné
 Využitie CPU
-Hodn. / Využitie
-Testov bez chýb:
+Skóre / Využitie
+Počet cyklov:
 7700
 Odkaz
-Odkaz
+Prepojiť
 Odkaz z:
 Odkaz do:
 7710
 Typ odkazu
 Pevný odkaz
-Súbor symbolického odkazu
-Priečinok symbolického odkazu
-Prekríženie priečinkov
+Symbolický odkaz na súbor
+Symbolický odkaz na priečinok
+Prepojenie priečinka
+7800
+Žiadosť o využitie pamäte
+Zmeňte povolený limit pre ďalšie operácie
+&Zopakujte vybratú akciu pre aktuálnu operáciu
+Akcia
+7810
+Operácia bola zablokovaná 7-Zipom.
+Operácia vyžaduje veľké množstvo pamäte (RAM).
+požadovaná veľkosť využitia pamäte
+povolený limit využitia pamäte
+limit využitia pamäte nastavený pomocou 7-Zip
+veľkosť RAM pamäte
+Maximálne množstvo pamäte RAM povolené na rozbaľovanie archívov:
+7820
+&Povoliť rozbaľovanie archívu
+P&reskočiť rozbaľovanie archívu
+Rozbaľovanie archívu bolo preskočené.

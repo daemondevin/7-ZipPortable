@@ -1,8 +1,8 @@
 ﻿;!@Lang2@!UTF-8!
 ;  3.12 : Alan Šimek
 ;  4.53 : Hasan Osmanagić
-;  9.07 : 
-; 15.05 : 2015-06-15 : Stjepan Treger  
+;  9.07 :
+; 15.05 : 2015-06-15 : Stjepan Treger
 ;
 ;
 ;

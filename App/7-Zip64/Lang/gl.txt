@@ -1,9 +1,9 @@
 ﻿;!@Lang2@!UTF-8!
-; 15.00 : 2016-02-01 : enfeitizador
-;
-;  9.20 : 2014-11-26 : enfeitizador
-;
 ;  3.12 : 2007-11-22 : Xosé Calvo
+;  9.20 : 2014-11-26 : enfeitizador
+; 15.00 : 2016-02-01 : enfeitizador
+; 22.00 : 2023-05-13 : enfeitizador
+;
 ;
 ;
 ;
@@ -35,7 +35,7 @@ Poñer por de&baixo
 Traer ao &fronte
 &Pausa
 Pausado
-Ten a certeza de querer cancelar?
+Queres cancelar?
 500
 &Ficheiro
 &Editar
@@ -45,11 +45,11 @@ Ferramen&tas
 A&xuda
 540
 &Abrir
-Abrir &dentro
-Abrir &fora
+Abr&ir dentro
+Abrir &fóra
 &Ver
 &Editar
-Rena&me
+Cambiar no&me
 &Copiar a...
 &Mover a...
 &Eliminar
@@ -84,7 +84,7 @@ Vista plana
 Barras de ferramen&tas
 Abrir cartafol raíz
 Subir un nivel
-Históricos de cartafoles...
+Histórico de cartafoles...
 &Recargar
 Recargar auto.
 750
@@ -100,7 +100,7 @@ Marcador
 &Rendemento
 960
 &Contidos...
-&Acerca de 7-Zip...
+&Acerca do 7-Zip...
 1003
 Camiño
 Nome
@@ -118,7 +118,7 @@ Cifrado
 Partir antes
 Partir despois
 Dicionario
-CRC
+
 Tipo
 Anti
 Método
@@ -163,9 +163,9 @@ Nome local
 Fornecedor
 Seguridade NT
 Fluxos alternos
-Aux !BUSCA
+Auxiliar
 Eliminado
-Is Tree !BUSCA
+É árbore
 
 
 Tipo de error
@@ -180,7 +180,7 @@ Tamaño virtual
 Tamaño sen comprimir
 Total tamaño físico
 Indexar volume
-SubTipo
+Subtipo
 Comentario curto
 Código de páxina
 
@@ -193,6 +193,11 @@ Ligazón forte
 iNode
 
 Só lectura
+
+Copiar ligazón
+
+
+Metadatos cambiados
 2100
 Opcións
 Idioma
@@ -228,7 +233,7 @@ Cartafol temporal do &sistema
 Cartafol a&ctual
 E&specificar:
 Usar só en unidades extraíbles
-Especificar unha localización para os arquivos temporais.
+Especificar unha localización para arquivos temporais.
 2500
 Axustes
 Amosar o elemento ".."
@@ -240,7 +245,7 @@ Clic simple para abrir un elemento
 Modo de selección &alternativo
 Usar memoria &longa de páxinas
 2900
-Acerca de 7-Zip
+Acerca do 7-Zip
 7-Zip é un programa gratuíto
 3000
 O sistema non puido atribuír a memoria requirida
@@ -252,7 +257,7 @@ Non se pode abrir o ficheiro '{0}' como arquivo
 Non se pode abrir o ficheiro cifrado '{0}'. Contrasinal incorrecto?
 Tipo de arquivo non admitido
 O ficheiro {0} xa existe
-Modificouse o ficheiro '{0}'.\nQuéreo actualizar no arquivo?
+Modificouse o ficheiro '{0}'.\nQuérelo actualizar no arquivo?
 Non se pode actualizar o ficheiro\n'{0}'
 Non se pode iniciar o editor.
 O ficheiro parécese a un virus (o nome do ficheiro contén espazos longos).
@@ -294,18 +299,21 @@ Modo sobrescribir:
 Preguntar antes de sobrescribir
 Sobrescribir sen preguntar
 Omitir ficheiros existentes
-Renomeo automático
-Renomeo automático de ficheiros existentes
+Cambio de nome automático
+Cambio de nome automático de ficheiros existentes
 3430
 Eliminar duplicidade do cartafol raíz
 Restaurar seguridade do ficheiro
+3440
+Propagar fluxo Zone.Id:
+Para ficheiros do Office
 3500
 Confirmar a substitución de ficheiro
 O cartafol destino xa ten un ficheiro co mesmo nome.
-Desexa substituír o ficheiro existente
+Queres substituír o ficheiro existente
 con estoutro?
 {0} bytes
-Renomeo a&utomático
+Cambio de nome a&utomático
 3700
 Método de compresión non admitido para '{0}'.
 Erro de datos en '{0}'. O ficheiro está danado.
@@ -318,26 +326,26 @@ Contrasinal incorrecto?
 Método de compresión non admitido
 Erro de datos
 Fallou a verificación CRC
-Datos non dispoñibles
+Datos non dispoñíbeis
 Remate de datos inesperado
 Hai certos datos despois do remate dos datos cargados
 Non é arquivo
 Erro de cabeceiras
 Contrasinal incorrecto
 3763
-Inicio de arquivo non dispoñible
+Inicio de arquivo non dispoñíbel
 Inicio de arquivo non confirmado
 
 
 
 Característica non admitida
 3800
-Insira contrasinal
-Insira contrasinal:
-Insírao de novo:
+Insire contrasinal
+Insire contrasinal:
+Insíreo de novo:
 Amo&sar contrasinal
 Os contrasinais non coinciden
-Use só letras latinas, números e caracteres especiais (!, #, $, ...) para o contrasinal
+Usa só letras latinas, números e caracteres especiais (!, #, $, ...) para o contrasinal
 O contrasinal é moi longo
 Contrasinal
 3900
@@ -388,10 +396,21 @@ Actualizar e engadir ficheiros
 Só actualizar ficheiros existentes
 Sincronizar ficheiros
 4070
-Navegar
+Explorar
 Todos os ficheiros
 Non sólido
 Sólido
+4080
+Hora
+Precisión de marca de hora:
+Hora de modificación gardada
+Hora de creación gardada
+Hora do último acceso gardada
+Estabelecer data do arquivo á data do ficheiro máis recente
+Non cambiar a data do último acceso aos ficheiros orixe
+4090
+seg
+ns
 6000
 Copiar
 Mover
@@ -399,19 +418,19 @@ Copiar a:
 Mover a:
 Copiando...
 Movendo...
-Renomeando...
-Seleccione cartafol destino.
+Cambiando nome...
+Selecciona cartafol destino.
 A operación non é admitida para este cartafol.
-Erro ao renomear ficheiro ou cartafol
+Erro ao cambiar nome do ficheiro ou cartafol
 Confirmar copia de ficheiro
-Desexa copiar os ficheiros ao arquivo
+Queres copiar os ficheiros ao arquivo
 6100
 Confirmar eliminar ficheiro
 Confirmar eliminar cartafol
 Confirmar eliminar ficheiro múltiplo
-Ten a certeza de eliminar '{0}'?
-Ten a certeza de eliminar o cartafol '{0}' e todo o que contén?
-Ten a certeza de eliminar estes {0} elementos?
+Queres eliminar '{0}'?
+Queres eliminar o cartafol '{0}' e todo o que contén?
+Queres eliminar estes {0} elementos?
 Eliminando...
 Erro ao eliminar ficheiro ou cartafol
 O sistema non pode mover un ficheiro cun nome tan longo á papeleira
@@ -436,7 +455,7 @@ Histórico de cartafoles
 Mensaxes de diagnose
 Mensaxe
 7100
-Computador
+Computadora
 Rede
 Documentos
 Sistema
@@ -454,10 +473,10 @@ Dividir ficheiro
 Dividir en &volumes, bytes:
 Dividindo...
 Confirmar división
-Ten a certeza de dividir o ficheiro en {0} volumes?
+Queres dividir o ficheiro en {0} volumes?
 O tamaño do volume ten que ser menor que o tamaño do ficheiro orixinal
 Tamaño de volume incorrecto
-Tamaño de volume especificado: {0} bytes.\nTen a certeza de dividir o arquivo nestes volumes?
+Tamaño de volume especificado: {0} bytes.\nQueres dividir o arquivo nestes volumes?
 7400
 Combinar ficheiros
 &Combinar a:
@@ -479,7 +498,7 @@ Proporción
 Proporción total
 Actual
 Resultante
-Uso de CPU
+Uso da CPU
 Proporción / Uso
 Pases:
 7700

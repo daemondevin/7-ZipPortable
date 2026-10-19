@@ -1,6 +1,6 @@
 ﻿;!@Lang2@!UTF-8!
-;  9.20 : Haqmar : www.bashqort.com
-; 
+;  9.20 : Haqmar
+;
 ;
 ;
 ;

@@ -204,7 +204,7 @@ Mënyrë alternative &selektimi
 Përdor &faqe të mëdha të memories
 2900
 Për 7-Zip
-7-Zip është softuer falas. Megjithatë, ju mund të përkrahni në zhvillimin e 7-Zip duke e regjistruar atë.
+7-Zip është softuer falas.
 3000
 
 S'ka gabime

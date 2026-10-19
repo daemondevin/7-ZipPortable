@@ -1,5 +1,5 @@
 ﻿;!@Lang2@!UTF-8!
-;  9.23 : 2011-09-25 : Translated by Giorgi Maghlakelidze, original translation by Dimitri Gogelia, 
+;  9.23 : 2011-09-25 : Translated by Giorgi Maghlakelidze, original translation by Dimitri Gogelia
 ;
 ;
 ;

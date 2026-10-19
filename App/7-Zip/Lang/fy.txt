@@ -204,7 +204,7 @@ Systeemmenu sjen litte
 Brûk &grut ûnthâld siden
 2900
 7-Zip it hoe en het
-7-Zip is fergees. Mar, jo kinne de ûntwikkeling stypje troch jo te registrearjen.
+7-Zip is fergees.
 3000
 
 Der binne gjin flaters

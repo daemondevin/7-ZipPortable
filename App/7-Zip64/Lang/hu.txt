@@ -1,9 +1,9 @@
 ﻿;!@Lang2@!UTF-8!
-;       : Jozsef Tamas Herczeg
-;  9.16 : Nyilas MISY
-;
-;
-;
+; 03.12 : 2003.12.11 : Jozsef Tamas Herczeg
+; 09.16 : 2010.09.08 : Nyilas MISY
+; 15.00 : 2021.11.09 : Barnabas Kovacs
+; 22.01 : 2022.07.15 : John Fowler
+; 25.00 : 2025.07.05 : John Fowler
 ;
 ;
 ;
@@ -34,7 +34,7 @@ Leállítás
 &Háttérben
 &Előtérben
 &Szünet
-Szünet
+Szüneteltetve
 Biztos, hogy megszakítja a folyamatot?
 500
 &Fájl
@@ -47,7 +47,7 @@ Ked&vencek
 M&egnyitás
 Megnyitás &belül
 Megnyitás kí&vül
-&Nézet
+&Fájl megtekintése
 S&zerkesztés
 Átn&evezés
 Más&olás mappába...
@@ -62,6 +62,8 @@ Különbség
 Mappa létrehozása
 Fájl létrehozása
 &Kilépés
+Link
+Alternatív adatfolyam
 600
 Min&d kijelölése
 Kijelölés megszüntetése
@@ -84,6 +86,7 @@ Gyökérmappa megnyitása
 Egy szinttel feljebb
 Mappa előzmények...
 &Frissítés
+Automatikus frissítés
 750
 Archiválás eszköztár
 Szokásos eszköztár
@@ -95,6 +98,8 @@ Könyvjelző
 900
 &Beállítások...
 &Teljesítménymérés
+910
+Ideiglenes fájlok törlése...
 960
 &Tartalomjegyzék...
 7-Zip &névjegye...
@@ -115,7 +120,7 @@ Titkosított
 Feldarabolás előtt
 Feldarabolás után
 Szótár
-CRC
+
 Típus
 Anti
 Módszer
@@ -131,7 +136,7 @@ Mappák
 Fájlok
 Verzió
 Kötet
-Többkötet
+Több kötet
 Eltolás
 Linkek
 Blokkok
@@ -142,15 +147,15 @@ Big-endian
 CPU
 Fizikai méret
 Fejlécek mérete
-Checksum
+Ellenőrző összeg
 Karakterisztika
 Virtuális cím
 ID
-Név rendezése
+Rövid név
 Alkalmazás készítője
 Szakasz mérete
 Mód
-Link
+Szimbolikus link
 Hiba
 Teljes méret
 Szabad terület
@@ -158,6 +163,43 @@ Kluszterméret
 Címke
 Helyi név
 Szolgáltató
+NT biztonság
+Alternatív adatfolyam
+Aux
+Törölt
+A fa
+
+
+Hiba típusa
+Hibák
+Hibák
+Figyelmeztetések
+Figyelem
+Adatfolyamok
+Alternatív adatfolyamok
+Alternatív adatfolyam mérete
+Virtuális méret
+Kitömörített mérete
+Teljes fizikai méret
+Kötet index
+Altípus
+Rövid megjegyzés
+Kódlap
+
+
+
+Kitöltő mérete
+Beágyazott extra adat mérete
+Link
+Hard link
+iNode
+
+Csak olvasható
+
+Link másolása
+
+
+Metaadatok megváltoztatva
 2100
 Beállítások
 Nyelv
@@ -168,10 +210,12 @@ Szerkesztő
 2200
 Rendszer
 7-Zip társítása:
+Minden felhasználónak
 2301
 7-Zip hozzáadása a parancsértelmező helyi menüjéhez
 Lépcsőzetes helyi menü
 Helyi menü elemek:
+Ikonok a helyi menüben
 2320
 <Mappa>
 <Archívum>
@@ -190,23 +234,23 @@ Mappák
 A &rendszer ideiglenes mappája
 &Jelenlegi
 &Meghatározott:
-Csak cserélhető meghajtókhoz
+Csak cserélhető meghajtók esetén használható
 Válassza ki az ideiglenes archív fájlok mappáját.
 2500
 Beállítások
-A ".." elem látható
+A ".." elem látható.
 Az eredeti fájlikonok láthatók
 Látható a rendszermenü
 &Teljes soros kijelölés
 &Rácsvonalak kijelzése
 Elem megnyitása egyszeres kattintással
 &Alternativ kiválasztási mód
-&Nagy memória haszálata
+&Nagy memória használata
 2900
 A 7-Zip névjegye
-A 7-Zip ingyenes szoftver. Ha elnyerte a tetszését, s mégis szeretné támogatni a további fejlesztését, regisztrálja 20 USD áron, fizethet hitelkártyával vagy más módon.
+A 7-Zip ingyenes szoftver.
 3000
-A rendszer nem tudja lefoglalni a szükséges memóriát
+A rendszer nem tudja lefoglalni a szükséges memóriát!
 Az archívum hibamentes
 {0} objektum kijelölve
 A(z) '{0}' mappát nem lehet létrehozni
@@ -218,25 +262,40 @@ A(z) {0} fájl már létezik
 '{0}'\nA fájl tartalma megváltozott.\nKívánja aktualizálni az archívumban?
 A fájl nem aktualizálható:\n'{0}'
 A szerkesztő nem indítható.
-A fájl vírusnak néz ki (a fájlnév hosszú szóközt tartalmaz a nevében).
-A művelet nem hívható meg abból a mappából amelynek hosszú az elérési útvonala.
+A fájl vírusnak tűnik (a fájl neve hosszú szóközöket tartalmaz).
+A művelet nem hívható meg olyan mappából, amelynek hosszú az elérési útvonala.
 Egy fájlt ki kell jelölnie!
-Egy vagy több fájlt ki kell jelölnie
+Egy vagy több fájlt ki kell jelölnie!
 Túl sok elem
+Nem nyitható meg a fájl mint {0} archívum
+Fájl nyitva van mint {0} archívum
+Az archívum eltolással nyitva van
 3300
 Kibontás
 Tömörítés
 Tesztelés
 Megnyitás...
 Vizsgálat...
+Eltávolítás
+3320
+Hozzáadás
+Frissítés
+Elemzés
+Másolat készítés
+Újratömörítés
+Átugrás
+Törlés
+Fejléc készítés
 3400
 Kibontás
 &Kibontás ide:
-Határozza meg a kibontott fájlok tárolómappáját.
+Adja meg a kicsomagolt fájlok helyét!
 3410
 Útvonal
 Teljes útvonal
 Nincs útvonal
+Abszolút útvonal
+Relatív útvonal
 3420
 Felülírás
 Rákérdezés felülírás előtt
@@ -244,6 +303,12 @@ Felülírás rákérdezés nélkül
 A létező fájlok kihagyása
 Automatikus átnevezés
 A létező fájlok automatikus átnevezése
+3430
+A gyökérmappa megkettőződésének megszüntetése.
+Fájlvédelem visszaállítása
+3440
+Propagálja a Zone.Id adatfolyamot:
+Office-fájlokhoz
 3500
 Fájlcsere megerősítése
 A célmappa már tartalmazza a feldolgozott fájlt.
@@ -257,6 +322,25 @@ Adathiba a következőben: '{0}'. A fájl sérült.
 CRC-hiba a következőben: '{0}'. A fájl sérült.
 Adathiba a titkosított fájlban: '{0}'. Hibás a jelszó?
 CRC-hiba a titkosított fájlban: '{0}'. Hibás a jelszó?
+3710
+Hibás jelszó?
+3721
+Nem támogatott tömörítési mód
+Adat hiba
+CRC hiba
+Elérhetetlen adat
+az adat váratlanul véget ért
+A hasznosnak vélt adatok után van néhány adat.
+Ez nem archívum
+Fejléc hiba
+Hibás jelszó
+3763
+Az archiválás megkezdése nem elérhető el.
+Az archiválás megkezdése nincs megerősítve.
+
+
+
+Nem támogatott funkció
 3800
 Jelszó beírása
 Írja be a jelszót:
@@ -269,7 +353,7 @@ Jelszó
 3900
 Eltelt idő:
 Hátralévő idő:
-Méret:
+Teljes méret:
 Sebesség:
 Feldolgozott:
 Tömörítési arány:
@@ -279,7 +363,7 @@ Archívumok:
 Behelyezés archívumba
 &Archívum:
 Akt&ualizálás módja:
-Arcíhvum &formátuma:
+Archívum &formátuma:
 Tömörítés &foka:
 Tömörítés &módja:
 &Címtár mérete:
@@ -295,6 +379,12 @@ Titkosítási eljárás:
 Fájlnevek &titkosítása
 A tömörítés memóriahasználata:
 A kitömörítés memóriahasználata:
+Tömörítés után törölje a fájlt
+4040
+Szimbolikus link tárolása
+Hard link tárolása
+Alternatív adatfolyam tárolása
+Biztonsági beállítások tárolása
 4050
 Raktár
 Leggyorsabb
@@ -312,6 +402,17 @@ Tallózás
 Minden fájl
 Nem tömör
 Tömör
+4080
+Idő
+Időbélyeg pontossága:
+Tárolás módosítási ideje
+Tárolás létrehozásának ideje
+A tárolás utolsó hozzáférési ideje
+Az archívum idejének beállítása a legutolsó fájl idejére
+Ne változtassa meg a forrásfájlok utolsó hozzáférési idejét
+4090
+mp
+ns
 6000
 Másolás
 Áthelyezés
@@ -334,7 +435,7 @@ Biztos, hogy törölni akarja a(z) '{0}' mappát és annak teljes tartalmát?
 Biztos, hogy törölni akarja ezt a(z) {0} elemet?
 Törlés...
 Hiba történt a fájl vagy a mappa törlésekor
-A rendszer nembírja mozgatni a fájlt a hosszú útvonallal a Lomtárba
+A rendszer nem tudja áthelyezni a hosszú elérési úttal rendelkező fájlokat a Lomtárba.
 6300
 Mappa létrehozása
 Fájl létrehozása
@@ -348,7 +449,7 @@ Hiba történt a fájl létrehozásakor
 Megjegyzés
 &Megjegyzés:
 Kijelölés
-Megszüntetés
+Kijelölés megszüntetése
 Maszk:
 6600
 Tulajdonságok
@@ -375,7 +476,7 @@ Darabolás &kötetekre, bájt:
 Darabolás...
 Darabolás megerősítése
 Biztos szét akarja darabolni a fájlt {0} kötetre?
-Kötet méretének kissebbnek kell lennie, mint az eredeti fájl mérete
+Kötet méretének kisebbnek kell lennie, mint az eredeti fájl mérete
 Hibás kötet méret
 A megadott kötet mérete: {0} byte.\nBiztos fel akarja darabolni az archívumot ilyen kötetre?
 7400
@@ -386,10 +487,10 @@ Csak az első rész kiválasztása a darabolt fájlból
 Nem ismeri fel a fájlt, mint darabolt fájl része
 Nem talál egynél több részt a darabolt fájlból
 7500
-Leírás számolása...
-Leírás információ
-CRC leírás az adathoz:
-CRC leírás az adathoz és névhez:
+Ellenőrző összeg kiszámítása...
+Ellenőrző összeg információ
+CRC ellenőrző összeg az adatokhoz:
+Az adatok és nevek CRC ellenőrző összege:
 7600
 Teljesítménymérés
 Memóriahasználat:
@@ -402,3 +503,31 @@ Eredmény
 CPU használata
 Becslés / Használat
 Menetek:
+7700
+Link
+Link
+Link innen:
+Link ide:
+7710
+Link típusa
+Hard link
+Szimbolikus fájl link
+Szimbolikus mappa link
+Mappa csatolási pont
+7800
+Memóriahasználati kérelem
+A következő műveletek megengedett határértékének módosítása
+A &kiválasztott művelet megismétlése az aktuális művelethez
+Művelet
+7810
+A műveletet a 7-Zip blokkolta.
+A művelet nagy mennyiségű memóriát (RAM) igényel.
+szükséges memóriahasználat mérete
+engedélyezett memóriahasználati korlát
+a 7-Zip által beállított memóriahasználati korlát
+RAM méret
+Az archívumok kicsomagolásához megengedett maximális RAM-használat:
+7820
+&Az archívum kicsomagolásának engedélyezése
+Az archívum kic&somagolásának kihagyása
+Az archívum kicsomagolását kihagytuk.

@@ -1,6 +1,6 @@
 ﻿;!@Lang2@!UTF-8!
-; 9.07 : F@rhad
-; 15.02 : 22/05/2015 : Г. Гасымов
+;  9.07 : F@rhad
+; 24.07 : 2024-07-23 : User
 ;
 ;
 ;
@@ -22,20 +22,20 @@ OLDU
 
 &Bəli
 &Xeyr
-&Bağla
+&Bağlamaq
 Kömək
 
 &Davam
 440
 &Hamısına Bəli
 Ha&mısına Xeyr
-Dayan
-Yenidən başla
+Dayandırmaq
+Yenidən başlamaq
 &Arxa planda
 Ö&ndə
 F&asilə
 Fasilədə
-Həqiqətən əməliyyatı dayandırmaq istəyirsiniz?
+Əməliyyat dayandırılsın?
 500
 &Fayl
 &Düzəliş
@@ -44,34 +44,34 @@ S&eçilmişlər
 &Vasitələr
 &Arayış
 540
-&Aç
-&Daxildə Aç
-B&ayırda aç
+&Açmaq
+&Daxildə Açmaq
+K&ənarda Açmaq
 &Baxış
 &Düzəliş
-Ye&nidən Adlandır
-&Nüsxələ...
-&Köçür...
-&Sil
-Faylı &Böl...
-Faylları B&irləşdir...
+Ye&nidən Adlandırmaq
+&Nüsxələmək...
+&Köçürmək...
+&Silmək
+Faylı &Bölmək...
+Faylları B&irləşdirmək...
 X&üsusiyyətlər
 Şər&h...
 Yoxlama Cəmi
 Müqayisə
-Qovluq Yarat
-Fayl Yarat
+Qovluq Yaratmaq
+Fayl Yaratmaq
 Ç&ıxış
 İstinad
 &Əvəzedici Axınlar
 600
-&Hamısını Seç
-Seçimi Ləğv Et
-&Seçimi Çevir
-Seç...
-Seçimi Ləğv Et...
-Növünə Görə Seç
-Növünə Görə Seçimi Ləğv Et
+&Hamısını Seçmək
+Seçimin Ləğvi
+&Seçimi Çevirmək
+Seçmək...
+Seçimin Ləğvi...
+Növünə Görə Seçmək
+Növünə Görə Seçimin Ləğvi
 700
 &Böyük İşarələr
 K&içik İşarələr
@@ -82,29 +82,31 @@ K&içik İşarələr
 Müstəvi Görünüş
 &2 Lövhə
 &Alətlər Lövhələri
-Kök Qovluğu Aç
+Kök Qovluğu Açmaq
 Bir Səviyyə Yuxarı
 Qovluqlar Tarixçəsi...
-&Yenilə
-Bilavasitə Yeniləmə
+&Yeniləmək
+Bilavasitə Yeniləmək
 750
 Arxivləyicinin Düymələr Lövhəsi
 Sadə Düymələr Lövhəsi
 Böyük Düymələr
-Düymələr Üzərində Mətnlər
+Düymələr Üzərində Qeydlər
 800
-&Qovluğu Seçilmişlərə Fərqli Əlavə Et
+&Qovluğu Seçilmişlərə Fərqli Əlavə Etmək
 Əlfəcin
 900
 Tənzimləmələr...
 Səmərə Sınağı
+910
+Müvəqqəti Faylların Silinməsi...
 960
 &Başlıq...
 7-Zip &Haqqında...
 1003
 İstiqamət
 Ad
-Genişləmə
+Genişlənmə
 Qovluq
 Ölçü
 Sıxılmış
@@ -115,8 +117,8 @@ Dəyişilib
 Aramsız
 Şərh
 Şifrələnib
-Əvvəlki parça
-Sonrakı parça
+Bölünüb Bundan Əvvəl
+Bölünüb Bundan Sonra
 Lüğət
 
 Növ
@@ -140,15 +142,15 @@ Uzlaşma
 Bölmə
 Cild
 
-
-
+64-bit
+Big-endian
 Prosessor
 Fiziki Ölçü
 Başlıqlar Ölçüsü
 Yoxlama Cəmi
 Xassələr
-Xəyali Ünvan
-
+Virtual Ünvan
+ID
 Qısa Ad
 Yaradıcı
 Sahə Ölçüsü
@@ -160,10 +162,10 @@ Azad Həcm
 Toplam Həcm
 Nişan
 Qısa Ad
-Təchizatcı
+Təchizatcı/Provayder
 NT Təhlükəsizlik
-Əvəzedici Axın
-
+Əvəzedici/Alternativ Axın
+Köməkçi
 Silinmiş
 Ağac
 
@@ -177,7 +179,7 @@ Axınlar
 Əvəzedici Axınlar
 Əvəzedici Axınlar Ölçüsü
 Xəyali Ölçü
-Ceşidli Ölçü
+Açıq\Çeşidlənmiş Ölçü
 Ümumi Fiziki Ölçü
 Cild Nömrəsi
 Növaltı
@@ -193,6 +195,11 @@ Sərt İstinad
 iNode
 
 Yalnız Oxumaq Üçün
+
+İstinad Surəti
+
+
+Metadata dəyişdirildi
 2100
 Tənzimləmələr
 Dil
@@ -205,38 +212,38 @@ Quruluş
 7-Zip Fayllarla Əlaqələnsin
 Bütün İstifadəçilər
 2301
-7-Zip əhatə təklifinə tətbiq edilsin 
+7-Zip əhatə təklifinə tətbiq edilsin
 Zəncirvari əhatə təklifi
 Ünsürlü əhatə təklifi:
 Əhatə təklifində nişanlar
 2320
 <Qovluq>
 <Аrxiv>
-Arxivi Aç
-Çeşidlə
-Arxivə Əlavə Et...
+Arxivi Açmaq
+Açmaq\Çeşidləmək
+Arxivə Əlavə Etmək...
 Sınaq
-Burda Çeşidlə
-{0} Çeşidlə
-{0} Əlavə Et
-Sıx Və E-Poçtla Göndər...
-{0} Sıx Və E-Poçtla Göndər
+Burada Açmaq\Çeşidləmək
+{0} Açmaq\Çeşidləmək
+{0} kimi Əlavə Etmək
+Sıxmaq və E-Poçtla Göndərmək...
+{0} Sıxmaq və E-Poçtla Göndərmək
 2400
 Qovluqlar
 &İş Qovluğu
 &Müvəqqəti Quruluş Qovluğu
 &Cari
-&Təyin Et:
+&Təyin Etmək:
 Yalnız dəyişkən daşıyıcılar üçün istifadə
-Müvəqqəti arxivlər üçün yer göstər.
+Müvəqqəti arxivlər üçün yer göstərmək.
 2500
 Tənzimləmələr
-".." ünsürünü göstər
-Həqiqi fayl işarələri göstər
-Quruluş təklifini göstər
+".." ünsürünü göstərmək
+Həqiqi fayl işarələri göstərmək
+Quruluş təklifini göstərmək
 Ox bütün sətir üzrə
-Ayrıcıları Göstər 
-Bir Toxunuşla Aç
+Ayrıcıları Göstərmək
+Bir Toxunuşla Açmaq
 Əvəzedici vəziyyət işarələnməsi
 Böyük yaddaş səhifələri istifadəsi
 2900
@@ -244,7 +251,7 @@ Böyük yaddaş səhifələri istifadəsi
 7-Zip Sərbəst Yayılan Proqramdır
 3000
 Kifayət qədər boş yaddaş yoxdur
-Səhvlər tapılmadı
+Xətalar tapılmadı
 {0} Ayrılmış hədəf
 '{0}' Qovluğunu yaratmaq mümkün olmadı
 Bu arxiv üçün dəyişiklik əməliyatı dəstəklənmir
@@ -252,37 +259,37 @@ Bu arxiv üçün dəyişiklik əməliyatı dəstəklənmir
 Şifrələnmiş '{0}' arxivini açmaq alınmadı. Yanlış şifrə?
 Dəstəklənməyən arxiv
 {0} faylı artıq mövcuddur
-'{0}' faylına dəyişiklik edildi.\nSiz onu arxivdə yeniləmək istəyirsiz? 
+'{0}' faylına dəyişiklik edildi.\nSiz onu arxivdə yeniləmək istəyirsiz?
 \n'{0}' faylını yeniləmək alınmadı
 Redaktəni işə salmaq alınmadı
 Fayl zərərvericiyə oxşayır (faylın adı uzun boşluq ardıcıllığı təşkil edir).
 Əməliyyat uzun yol təşkil edən qovluqdan icra oluna bilmir.
-Siz bir fayl seçməlisiniz
-Siz bir və ya bir neçə fayl seçməlisiniz
+Bir fayl seçilməlidir
+Bir və ya bir neçə fayl seçilməlidir
 Həddən çox ünsür
 Faylı, '{0}' arxivi kimi açmaq alınmadı
 Fayl, {0} arxivi kimi açıldı
 Arxiv əvəzlənərək açıldı
 3300
-Çeşidlənmə
+Açılma\Çeşidlənmə
 Sıxılma
 Sınaq
-Açılma...
-Yoxlama...
+Açılır...
+Yoxlanır...
 Silinmə
 3320
 Əlavə Etmək
 Yenilənmə
 Təhlil
 Nüsxələnmə
-Yenidən Çeşidlənmə
+Yenidən Açılma\Çeşidlənmə
 Keçmə İcazəsi
 Silinmə
 Başlıqlar Yaradılması
 3400
-Ayır
-Ç&eçidlə:
-Ayrılan faylların yerini göstərin.
+Ayırmaq
+Ç&eşidləmək:
+Ayrılan faylların yerini göstərmək.
 3410
 Fayllara istiqamət:
 Tam istiqamətlər
@@ -294,20 +301,23 @@ Yenidən yazılma:
 Təsdiqli
 Təsdiqsiz
 Ötürmək
-Birbaşa yenidən adlandır
-Mövcud olanları yenidən adlandır
+Birbaşa yenidən adlandırmaq
+Mövcud olanları yenidən adlandırmaq
 3430
-Kök qovluqla bənzərliyi aradan qaldır
-Faylın təhlükəsizlik bərpası 
+Kök qovluqla bənzərliyi aradan qaldırmaq
+Giriş icazəsini təyin etmək
+3440
+Zone.Id axını yaymaq:
+Office faylları üçün
 3500
 Faylın əvəzlənmə təsdiqi
 Qovluq artıq emal olunan fayl təşkil edir.
-Mövcud faylı əvəzlə
+Mövcud faylı əvəzləmək
 növbəti faylla?
 {0} bayt
-Birbaşa yenidən adlandır
+Birbaşa yenidən adlandırmaq
 3700
-'{0}' faylının dəstəklənməyən sıxılma üsulu.
+'{0}' faylı üçün dəstəklənməyən sıxılma üsulu.
 '{0}' məlumatlarında xəta. Fayl korlanıb.
 '{0}' CRC xətası. Fayl korlanıb.
 '{0}' şifrəli fayl məlumatlarında xəta. Yanlış şifrə?
@@ -332,12 +342,12 @@ Təsdiqsiz arxiv əvvəli
 
 Dəstəklənməyən xüsusiyyət
 3800
-Şifrə daxil etmə
+Şifrə daxil etmək
 &Şifrə daxil edin:
 Şifrəni təkrarlayın:
-&Şifrəni göstər
+&Şifrəni göstərmək
 Şifrələr uyğun deyil
-Şifrə üçün yalnız latın hərfləri, rəqəmlər və xüsusi rəmzlər istifadə edin (!, #, $, ...)
+Şifrə üçün yalnız latın hərfləri, rəqəmlər və xüsusi işarələr istifadə edin (!, #, $, ...)
 Şifrə şox uzundur
 &Şifrə
 3900
@@ -362,47 +372,58 @@ Bölmə ölçüsü:
 Axın sayı:
 &Nizamlar:
 &Seçimlər
-SF&X arxiv yarat
-Yazılış üçün açıq faylları sıx
+SF&X arxiv yaratmaq
+Yazılış üçün açıq faylları sıxmaq
 Şifrələmə
 Şifrələmə üsulu:
-Fayl adlarını &şifrələ
-Qablaşdırma üçün yaddaş həcmi:
-Çeşidləmə üçün yaddaş həcmi:
-Sıxılmadan sonra faylları sil
+Fayl adlarını &şifrələmək
+Sıxılma\Qablaşdırma üçün yaddaş həcmi:
+Açılma\Çeşidləmə üçün yaddaş həcmi:
+Sıxılmadan sonra faylları silmək
 4040
-Rəmzli keçidləri saxla
-Sərt keçidləri saxla
-Əvəzedici axınları saxla
-Giriş hüququnu saxla
+Rəmzli keçidləri saxlamaq
+Sərt keçidləri saxlamaq
+Əvəzedici axınları saxlamaq
+Giriş hüququnu saxlamaq
 4050
 Sıxılmasız
 Sürətli
 Cəld
 Məqbul
 Yüksək
-Daha Yüksək (Ultra)
+Ən Yüksək (Ultra)
 4060
-Əlavə et və əvəzlə
-Yenilə və əlavə et
-Yenilə
-Eyniləşdir (Sinxron)
+Əlavə etmək və əvəzləmək
+Yeniləmək və əlavə etmək
+Yeniləmək
+Eyniləşdirmək (Sinxron)
 4070
-Vərəqlə
+Vərəqləmək
 Bütün Fayllar
 Fayl ölçüsünə görə
 Aramsız
+4080
+Vaxt
+Vaxt işarələrinin dəqiqliyi:
+Faylların dəyişdirilmə vaxtını saxlamaq
+Faylların yaradılma vaxtını saxlamaq
+Fayllara son giriş vaxtını saxlamaq
+Arxiv vaxtını ən yeni faylın vaxtına görə təyin etmək
+Mənbə fayllarında giriş vaxtı dəyişdirilməsin
+4090
+san
+ns
 6000
-Nüsxələ
-Köçür
-Nüsxələ:
-Köçür:
-Nüsxələlənmə...
-Köçürülmə...
-Yenidən adlandırılma...
+Nüsxələmək
+Köçürmək
+Nüsxələmək:
+Köçürmək:
+Nüsxələlənir...
+Köçürülür...
+Yenidən adlandırılır...
 Qovluğu göstərin.
 Əməliyyat bu qovluq üçün dəstəklənmir.
-Fayl və ya Qovluğun Yenidən Adlandırılması Zamanı Xəta 
+Fayl və ya Qovluğun Yenidən Adlandırılması Zamanı Xəta
 Faylların Nüsxələlənmə Təsdiqi
 Siz həqiqətən bu faylları arxivə nüsxələmək istəyirsiz
 6100
@@ -412,12 +433,12 @@ Fayllar dəstəsinin silinmə təsdiqi
 Siz həqiqətən "{0}" silmək istəyirsiz?
 Siz həqiqətən "{0}" qovluğunu və onun bütün məzmununu silmək istəyirsiz?
 Siz həqiqətən {0} hədəfi silmək istəyirsiz?
-Silinmə...
+Silinir...
 Fayl və ya Qovluq Silinməsi Zamanı Xəta
 Quruluş uzun yollu faylların səbətə silinməsi əməliyyatını dəstəkləmir
 6300
-Qovluq Yarat
-Fayl Yarat
+Qovluq Yaratmaq
+Fayl Yaratmaq
 Qovluq Adı:
 Fayl Adı:
 Yeni Qovluq
@@ -427,8 +448,8 @@ Fayl Yaradılması Zamanı Zəta
 6400
 Şərh
 &Şərh:
-Seçin
-Seçimi Ləğv Edin
+Seçmək
+Seçimin Ləğvi
 Üzlük (Maska):
 6600
 Xassələr
@@ -441,27 +462,27 @@ Kompüter
 Sənədlər
 Quruluş
 7200
-Əlavə Et
-Ayır
+Əlavə Etmək
+Ayırmaq
 Sınaq
-Nüsxələ
-Köçür
-Sil
+Nüsxələmək
+Köçürmək
+Silmək
 Məlumat
 7300
-Fayl Bölmək
+Faylı Bölmək
 &Bölmək:
-Cildlərə &bölmək, (bayt) ölçüdə:
-Bölünmə...
+Cildlərə &bölmək, həcmi (bayt ilə):
+Bölünür...
 Bölünmə Təsdiqi
-Siz həqiqətən faylı {0} hissəyə bölmək istəyirsiz?
+Fayl {0} hissəyə bölünsün?
 Cild ölçüsü ilkin fayl ölçüsündən kiçik olmalıdır
 Cildlərin ölçü təyin etmə sahəsində xəta
-Təyin edilmiş cild ölçüsü: {0} bayt.\nSiz həqiqətən arxivi belə cildlərə bölmək istəyirsiniz?
+Təyin edilmiş cild ölçüsü: {0} bayt.\nArxiv belə cildlərə bölünsün?
 7400
-Faylları Birləşdir
+Faylları Birləşdirmək
 &Birləşdirmək:
-Birləşmə...
+Birləşir...
 Bölünmüş faylın yalnız birinci hissəsini seçmək lazımdır
 Bölünmüş faylın tanınması mümkün olmadı
 Bölünmüş faylın birdən çox hissəsini tapmaq mümkün olmadı
@@ -473,23 +494,40 @@ Dəlillər və adlar üçün CRC yoxlanma cəmi:
 7600
 Səmərə Sinağı
 Yaddaş Həcmi:
-Qablaşdırma
-Çeşidlənmə
-Dərəcə
-Ümumi Dərəcə
+Sıxılma\Qablaşdırma
+Açmaq\Çeşidlənmə
+Reytinq
+Ümumi Reytinq
 Cari
 Nəticə
 Yüklənmə
-Yüklənmə Dərəcəsi
+Reytinq/İstifadə
 Keçid:
 7700
 İstinad
-Əlaqələndir
+Əlaqələndirmək
 Mənbə:
 Məqsəd:
 7710
-İstinad Qismi
-Sərt İstinad 
+İstinad Növü
+Sərt İstinad
 Rəmzi İstinad (Fayl)
 Rəmzi İstinad (Qovluq)
 Bağlantı Nöqtəsi (Qovşaq)
+7800
+Yaddaş istifadəsi sorğusu
+Növbəti əməliyyatlar üçün icazə verilən limiti dəyişdirmək
+Cari əməliyyat üçün seçilmiş fəaliyyəti təkrarlamaq
+Fəaliyyət
+7810
+7-Zip əməliyyatı blokladı.
+Əməliyyat böyük həcmdə operativ yaddaş (RAM) tələb edir.
+tələb olunan operativ yaddaş həcmi
+operativ yaddaş istifadəsinə icazə verilən limit
+7-Zip tərəfindən təyin olunan yaddaş istifadəsi limiti
+operativ yaddaş həcmi (RAM)
+Açmaq\Çeşidləmək üçün icazə verilən operativ yaddaş (RAM) istifadə limiti:
+7820
+Arxivin açılmasına icazə vermək
+Arxivin açılmasını ötürmək
+Arxiv açılmadı.

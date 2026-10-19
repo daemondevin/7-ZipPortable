@@ -3,8 +3,8 @@
 ;       : pixel
 ;  9.07 : F1xat
 ;  9.33 : Łukasz Maria P. Pastuszczak
-;
-;
+; 22.00 : Michał L.
+; 24.04 : Piter, Michał L.
 ;
 ;
 ;
@@ -58,11 +58,12 @@ Złą&cz pliki...
 Wł&aściwości
 Ko&mentarz
 Oblicz sumę kontrolną
-Diff
+Różnice pomiędzy plikami
 Utwórz &folder
 U&twórz plik
 Za&kończ
 Dow&iązanie
+&Alternatywne strumienie
 600
 Z&aznacz wszystko
 &Odznacz wszystko
@@ -97,6 +98,8 @@ Zakładka
 900
 &Opcje...
 &Test wydajności
+910
+Usuń pliki tymczasowe…
 960
 &Zawartość
 7-Zip - i&nformacje
@@ -162,7 +165,7 @@ Nazwa lokalna
 Dostawca
 Zabezpieczenia NT
 Alternatywny strumień
-
+Aux
 Usunięty
 Drzewo
 
@@ -185,21 +188,29 @@ Strona kodowa
 
 
 
-
-
+Rozmiar danych po zakończeniu archiwum
+Rozmiar danych zewnętrznych
 Dowiązanie
 Dowiązanie twarde
 I-węzeł
+
+Tylko do odczytu
+
+Kopiuj odnośnik
+
+
+Zmienione metadane
 2100
 Opcje
 Język
 Język:
 Edytor
 &Edytor:
-&Diff:
+&Program do porównywania:
 2200
 System
 Skojarz program 7-Zip z:
+Wszyscy użytkownicy
 2301
 Zintegruj program 7-Zip z menu kontekstowym powłoki
 Kaskadowe menu kontekstowe
@@ -256,12 +267,25 @@ Operacja nie może być wywołana z folderu, który ma długą ścieżkę.
 Musisz zaznaczyć jeden plik
 Musisz zaznaczyć jeden lub więcej plików
 Zbyt dużo elementów
+Nie można otworzyć pliku jako archiwum {0}
+Plik jest otwarty jako archiwum {0}
+Archiwum jest otwarte z przesunięciem
 3300
 Wypakowywanie
 Kompresowanie
 Testowanie
 Otwieranie...
 Skanowanie...
+Usuwanie
+3320
+Dodawanie
+Aktualizowanie
+Analizowanie
+Replikacja
+Przepakowywanie
+Pomijanie
+Usuwanie
+Tworzenie nagłówka
 3400
 Wypakuj
 &Wypakuj do:
@@ -282,6 +306,9 @@ Automatycznie zmień nazwy istniejących plików
 3430
 Wyeliminuj podwojenie folderu głównego
 Przywróć zabezpieczenia plików
+3440
+Propagowanie strumienia Zone.Id:
+Dla dokumentów MS Office
 3500
 Potwierdź zamianę pliku
 Folder docelowy zawiera już przetwarzany plik.
@@ -306,6 +333,7 @@ Nieoczekiwany koniec danych
 Pewne dane znajdują się za końcem bloku użytecznych danych
 Nie rozpoznano archiwum
 Błąd nagłówków
+Nieprawidłowe hasło
 3763
 Niedostępny początek archiwum
 Niepotwierdzony początek archiwum
@@ -374,6 +402,17 @@ Przeglądaj
 Wszystkie pliki
 Nieciągły
 Ciągły
+4080
+Czas
+Precyzja znacznika czasu:
+Przechowuj czas ostatniej modyfikacji
+Przechowuj czas utworzenia
+Przechowuj czas ostatniego dostępu
+Ustaw czas archiwizacji na czas ostatniego pliku
+Nie zmieniaj czasu ostatniego dostępu do plików źródłowych
+4090
+sek.
+ns
 6000
 Kopiuj
 Przenieś
@@ -475,3 +514,20 @@ Dowiązanie twarde
 Dowiązanie symboliczne pliku
 Dowiązanie symboliczne katalogu
 Połączenie katalogów
+7800
+Żądanie użycia pamięci
+Zmień dozwolony limit dla kolejnych operacji
+&Powtórz wybraną akcję dla bieżącej operacji
+Akcja
+7810
+Operacja została zablokowana przez 7-Zip.
+Operacja wymaga dużej ilości pamięci RAM.
+wymagany rozmiar pamięci do użycia
+dozwolony limit pamięci do użycia
+limit pamięci do użycia ustawiony przez 7-Zip
+rozmiar pamięci RAM
+Maksymalna ilość pamięci RAM dozwolona do rozpakowywania archiwów:
+7820
+&Zezwól na rozpakowywanie archiwum
+&Pomiń rozpakowywanie archiwum
+Rozpakowywanie archiwum zostało pominięte.

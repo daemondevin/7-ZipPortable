@@ -2,9 +2,9 @@
 ;  4.07 : Nicolas Sierro
 ;  9.07 : Philippe Berthault
 ; 15.14 : Sylvain St-Amand (SSTSylvain)
-;
-;
-;
+; 22.00 : 2022-06-09 : Lolo S.
+; 23.01 : 2023-12-20 : Denis G (Need74)
+; 24.09 : 2024-12-28 : Lolo S.
 ;
 ;
 ;
@@ -27,8 +27,8 @@ Aide
 
 &Continuer
 440
-Oui pour &Tous
-Non pour T&ous
+Oui pour &tous
+Non pour t&ous
 Arrêter
 Redémarrer
 &Arrière-plan
@@ -45,36 +45,36 @@ Fa&voris
 &Aide
 540
 &Ouvrir
-Ouvrir à l'&intérieur
-Ouvrir à l'e&xtérieur
-&Voir
+Ouvrir dans le gestionnaire &7-Zip
+Ouvrir dans l'Explorateur Windows
+&Voir (hexa)
 &Édition
 Reno&mmer
 &Copier vers...
 &Déplacer vers...
 S&upprimer
 Diviser le &fichier...
-Combiner les fic&hiers...
+&Fusionner les fichiers...
 P&ropriétés
 Comme&ntaire...
 Somme de contrôle
-Diff
+Comparaison des différences (Diff)
 Créer un dossier
 Créer un fichier
 &Quitter
-Lien
-Flux &Alternatif
+Connexion
+Flux &alternatif
 600
-Sélectionner &Tout
-Désélectionner Tout
-&Inverser la Sélection
+Sélectionner &tout
+Désélectionner to&ut
+&Inverser la sélection
 Sélectionner...
 Désélectionner...
-Sélectionner par Sorte
-Désélectionner par Sorte
+Sélectionner par type
+Désélectionner par type
 700
-&Grandes Icônes
-&Petites Icônes
+&Grandes icônes
+&Petites icônes
 &Liste
 &Détails
 730
@@ -86,18 +86,20 @@ Ouvrir le dossier racine
 Dossier parent
 Historique des dossiers...
 Actualis&er
-Actualiser Automatiquement
+Actualiser automatiquement
 750
-Barre d'Archive
-Barre Standard
-Grands Boutons
-Montrer le texte des Boutons
+Barre d'archive
+Barre standard
+Grands boutons
+Montrer le texte des boutons
 800
-&Ajouter le répertoire aux Favoris
+&Ajouter le dossier aux favoris comme
 Signet
 900
 &Options...
 &Test de performance
+910
+Supprimer les fichiers temporaires...
 960
 &Contenu...
 À &propos de 7-Zip...
@@ -107,23 +109,23 @@ Nom
 Extension
 Dossier
 Taille
-Compressé
+Taille compressée
 Attributs
 Créé le
 Accédé le
 Modifié le
 Solide
-Commentaire
-Chiffrer
-Diviser Avant
-Diviser Après
+Commenté
+Chiffré
+Diviser avant
+Diviser après
 Dictionnaire
 
-Sorte
+Type
 Anti
 Méthode
 OS hôte
-Système de Fichiers
+Système de fichiers
 Utilisateur
 Groupe
 Bloc
@@ -134,38 +136,38 @@ Dossiers
 Fichiers
 Version
 Volume
-Multivolume
-Offset
+Multi-volume
+Décalage
 Liens
 Blocs
 Volumes
 
 64 bits
-Big-endian
+Gros-boutiste
 CPU
 Taille physique
 Taille des en-têtes
 Somme de contrôle
 Caractéristiques
 Adresse virtuelle
-ID
+Identifiant
 Nom court
-Application créatrice
+Application source
 Taille de secteur
 Mode
-Lien Symbolique
+Lien symbolique
 Erreur
-Taille Totale
-Espace Libre
+Taille totale
+Espace libre
 Taille des clusters
 Nom de volume
 Nom local
 Fournisseur
 Sécurité NT
 Flux alternatif
-Aux
-Effacer
-En Arbre
+Auxiliaire
+Supprimé
+En arbre
 
 
 Type d'erreur
@@ -174,32 +176,37 @@ Erreurs
 Avertissements
 Avertissement
 Flux
-Flux Alterné
-Grosseur du Flux Alterné
-Grosseur Virtuel
-Grosseur Décompressé
-Grosseur Physique Totale
+Flux alternés
+Taille des flux alternés
+Taille virtuelle
+Taille décompressée
+Taille physique totale
 Indexe du Volume
-Sous-Type
-Commentaire Bref
-Code Page
+Sous-type
+Commentaire court
+Page de codes
 
 
 
-Grosseur Tail
-Grosseur Embedded Stub
-Lien
-Lien Solide
-iNode
+Taille de la queue
+Taille de la matrice intégrée
+Connexion
+Lien solide
+iNoeud
 
-Lecture-seulement
+Lecture seule
+
+Copier le lien
+
+
+Métadonnées modifiées
 2100
 Options
 Langue
 Langue :
 Éditeur
 &Éditeur :
-&Diff :
+Résultat de comparaison (&Diff) :
 2200
 Système
 Associer avec 7-Zip :
@@ -225,10 +232,10 @@ Compresser vers {0} et envoyer par courriel
 Dossiers
 Dossier de &travail
 Dossier temporaire du &système
-&Courant
-S&pécifié :
+Dossier &courant
+Dossier s&pécifié :
 N'utiliser que pour les médias amovibles
-Spécifiez un dossier pour les fichiers d'archive temporaires.
+Spécifier un dossier pour les fichiers d'archive temporaires.
 2500
 Paramètres
 Afficher l'élément ".."
@@ -236,11 +243,11 @@ Afficher les icônes réelles des fichiers
 Afficher le menu système
 &Sélectionner toute la ligne
 Afficher la &grille
-Simple clic pour ouvrir un item
+Ouvrir les items par simple clic
 Utiliser la sélection &alternative
-Utiliser des &grosses pages mémoire
+Utilise de grandes pages mémoire
 2900
-A propos de 7-Zip
+À propos de 7-Zip
 7-Zip est un logiciel libre
 3000
 Le système ne peut allouer la quantité de mémoire nécessaire
@@ -255,89 +262,92 @@ Le fichier {0} existe déjà
 Le fichier '{0}' a été modifié.\nVoulez-vous le mettre à jour dans l'archive ?
 Impossible de mettre à jour\n'{0}'
 Impossible de démarrer l'éditeur.
-Le fichier est peut-être un virus (le nom contient des grands espacements pour masquer l'extension).
-Cette opération ne peut être effectuée depuis un dossier ayant un trop long chemin d'accès.
+Le fichier ressemble à un virus (son nom contient de longs espaces qui peuvent masquer l'extension).
+L'opération ne peut être effectuée depuis un dossier ayant un chemin d'accès trop long.
 Vous devez sélectionner un fichier
-Vous devez sélectionner un ou plusieurs fichiers
-Trop d'objets
-Ne peut ouvrir les fichiers {0} comme une archive
+Vous devez sélectionner au moins un fichier
+Trop d'éléments
+Impossible d'ouvrir le fichier {0} comme une archive
 Le fichier {0} est ouvert comme une archive
 L'archive est ouverte avec un décalage
 3300
-Extraction
-Compression
-Contrôle
+Extraction en cours
+Compression en cours
+Contrôle en cours
 Ouverture...
-Exploration...
-Enlever
+Analyse...
+Suppression
 3320
-Ajoute
-Modifie
+Ajout
+Mise à jour
 Analyse
-Réplique
-Remballage
-Passe
-Efface
-Création d'un en-tête
+Réplication
+Reconditionnement
+Évitement
+Effacement
+Création d'en-tête
 3400
 Extraire
 E&xtraire vers :
-Choisissez un dossier pour l'extraction des fichiers.
+Spécifier un dossier pour l'extraction des fichiers.
 3410
-Mode de chemin :
-Nom de chemin complet
-Pas de nom de chemin
-Nom de chemin absolu
-Nom de chemin relatif
+Type de chemin :
+Chemin complet
+Aucun chemin
+Chemin absolu
+Chemin relatif
 3420
-Mode de remplacement :
-Confirmer avant de remplacer
-Remplacer sans demander
-Ignorer les fichiers existants
+Choix d'écrasement :
+Demander avant d'écraser
+Écraser sans demander
+Ne pas écraser les fichiers existants
 Renommer automatiquement
-Renommer les fichiers existants
+Renommage automatique des fichiers existants
 3430
-Élimine la duplication du répertoire racine
-Restauration du fichier de sécurité
+Éliminer la duplication du répertoire racine
+Restaurer la sécurité des fichiers
+3440
+Propager le flux Zone.Id :
+Pour les fichiers Office
 3500
-Confirmer le remplacement de fichier
+Confirmer l'écrasement de fichier
 Le dossier de destination contient déjà un fichier avec ce nom.
 Voulez-vous remplacer le fichier existant
 par celui-ci ?
 {0} octets
 Renommer &automatiquement
 3700
-Méthode de compression non valide pour '{0}'.
+Méthode de compression non prise en charge pour '{0}'.
 Donnée erronée dans le fichier '{0}'. Le fichier est corrompu.
 Échec du contrôle CRC dans le fichier '{0}'. Le fichier est corrompu.
 Donnée erronée dans le fichier crypté '{0}'. Mauvais mot de passe ?
 Échec du contrôle CRC dans le fichier crypté '{0}'. Mauvais mot de passe ?
 3710
-Pas le bon mot de passe ?
+Mauvais mot de passe ?
 3721
 Méthode de compression non supportée
 Erreur de donnée
 Échec de CRC
-Donnée non disponible
+Données non disponibles
 Fin de données inattendues
 Il y a des données après la fin des données utiles
 N'est pas une archive
-Erreur en-têtes
+Erreur d'en-têtes
 Mauvais mot de passe
 3763
-Démarrage non disponible d'une archive
-Démarrage non confirmé d'une archive
+Début d'archive non disponible
+Début d'archive non confirmé
 
 
 
 Option non supportée
 3800
-Entrez le mot de passe
-Entrez le mot de passe :
-Entrez le mot de passe à nouveau :
+Entrer le mot de passe
+&Entrer le mot de passe :
+En&trer le mot de passe à nouveau :
 &Afficher le mot de passe
 Les mots de passe ne correspondent pas
-Pour le mot de passe, n'utilisez que des lettres non accentuées, des chiffres et des caractères spéciaux (!, #, $, ...)
+Pour le mot de passe, n'utiliser que des lettres non accentuées, des chiffres et des caractères spéciaux (!, #, $, ...)
 Le mot de passe est trop long
 Mot de passe
 3900
@@ -348,7 +358,7 @@ Vitesse :
 Traité :
 Taux de compression :
 Erreurs :
-Archive :
+Archives :
 4000
 Ajouter à l'archive
 &Archive :
@@ -362,19 +372,19 @@ Taille de bloc solide :
 Nombre de threads CPU :
 &Paramètres :
 Options
-Créer une archive SF&X
+Créer une archive auto-extractible SfX
 Compresser des fichiers partagés
 Chiffrement
 Méthode de chiffrement :
-Chiffre les &noms de fichiers
+Chiffrer les &noms de fichiers
 Mémoire pour la compression :
 Mémoire pour la décompression :
-Effacer les fichiers après compression
+Supprimer les fichiers après compression
 4040
-Emmagasine liens symboliques
-Emmagasine liens solides
-Emmagasine flux de données alternatifs
-Emmagasine fichier de sécurité
+Enregistrer les liens symboliques
+Enregistrer les liens solides
+Enregistrer les flux de données alternatifs
+Enregistrer la sécurité de fichier
 4050
 Aucune
 Le plus rapide
@@ -388,10 +398,21 @@ Mettre à jour et ajouter les fichiers
 Rafraîchir les fichiers existants
 Synchroniser les fichiers
 4070
-Choisir
+Parcourir
 Tous les fichiers
 Non-solide
 Solide
+4080
+Date
+Précision des dates :
+Enregistrer la date de modification
+Enregistrer la date de création
+Enregistrer la date du dernier accès
+Définir la date d'archivage sur le dernière date du fichier
+Ne pas modifier la date de dernier accès pour les fichiers source
+4090
+sec
+ns
 6000
 Copier
 Déplacer
@@ -400,21 +421,21 @@ Déplacer vers :
 Copie...
 Déplacement...
 Renommage...
-Sélectionnez le dossier de destination.
+Sélectionner le dossier de destination.
 L'opération n'est pas possible pour ce dossier.
-Erreur durant le Renommage du Fichier ou du Dossier
-Confirmation de la Copie de(s) Fichier(s)
-Confirmer la copie de(s) fichier(s) à archiver
+Erreur durant le renommage du fichier ou du dossier
+Confirmer la copie de fichier
+Êtes-vous sûr de vouloir copier ces fichiers dans l'archive
 6100
-Confirmer la Suppression du Fichier
-Confirmer la Suppression du Dossier
-Confirmer la Suppression de Multiple Fichiers
+Confirmer la suppression du fichier
+Confirmer la suppression du dossier
+Confirmer la suppression de plusieurs fichiers
 Êtes-vous sûr de vouloir supprimer '{0}' ?
-Êtes-vous sûr de vouloir supprimer le dossier '{0}' et tout ce qu'il contient ?
-Êtes-vous sûr de vouloir supprimer ces {0} objets ?
+Êtes-vous sûr de vouloir supprimer le dossier '{0}' et tout son contenu ?
+Êtes-vous sûr de vouloir supprimer ces {0} éléments ?
 Suppression...
-Erreur durant la suppression du fichier ou du dossier
-Le système ne peut mettre à la Corbeille un fichier avec un trop long chemin d'accès
+Erreur lors de la suppression du fichier ou du dossier
+Le chemin du fichier est trop long pour permettre de déplacer le fichier vers la corbeille
 6300
 Créer un Dossier
 Créer un Fichier
@@ -449,47 +470,64 @@ Déplacer
 Supprimer
 Informations
 7300
-Diviser le fichier
-&Diviser en :
-Diviser en &volumes, octets :
-Découper...
-Confirmez le découpage
+Découper le fichier
+&Découper en :
+Découper en &volumes, octets :
+Découpage...
+Confirmer le découpage
 Êtes-vous sûr de vouloir découper le fichier en {0} volumes ?
 La taille de volume doit être inférieure à la taille du fichier d'origine
 Taille de volume incorrecte
-Taille de volume spécifiée : {0} octets.\nÊtes-vous sûr de vouloir découper l'archive dans de tels volumes ?
+Taille spécifiée : {0} octets.\nÊtes-vous sûr de vouloir diviser l'archive de cette façon ?
 7400
-Combiner les fichiers
-&Combiner en :
-Combinaison...
-Ne sélectionnez que le premier fichier
-Ne trouve aucun fichier faisant partie d'une archive divisée
-Ne trouve qu'un seul fichier faisant partie d'une archive divisée
+Fusionner les fichiers
+&Fusionner en :
+Fusionnage...
+Ne sélectionner que la première partie du fichier fractionné
+Fichier non reconnu comme partie d'une archive fractionnée
+Impossible de trouver plus d'une partie de l'archive fractionnée
 7500
 Calcul de la somme de contrôle...
 Informations sur la somme de contrôle
-Somme de contrôle des données :
-Somme de contrôle des données et des noms :
+Somme de contrôle CRC des données :
+Somme de contrôle CRC des données et des noms :
 7600
 Test de performance
 Utilisation de la mémoire :
 Compression
 Décompression
-Taux
-Taux total
+Notation
+Note totale
 Actuel
 Résultant
-Utilisation CPU
-Estimé / Usage
-Passe :
+Charge CPU
+Utilisation notée
+Passes :
 7700
-Lien
+Connexion
 Lien
 Lien depuis :
-Lien ver :
+Lien vers :
 7710
-Sorte de lien
+Type de connexion
 Lien solide
 Lien symbolique de fichier
-Lien symbolique de répertoire
-Jonction de répertoire
+Lien symbolique de dossier
+Jonction de dossiers
+7800
+Demande d'utilisation de la mémoire
+Modifier la limite autorisée pour les prochaines opérations
+&Répéter l'action sélectionnée pour l'opération en cours
+Action
+7810
+L'opération a été bloquée par 7-Zip.
+L'opération nécessite une grande quantité de mémoire (RAM).
+taille d'utilisation de la mémoire requise
+limite d'utilisation de la mémoire autorisée
+limite d'utilisation de la mémoire définie par 7-Zip
+Taille de la RAM
+Quantité maximale d'utilisation de la mémoire RAM autorisée pour décompresser les archives :
+7820
+&Autoriser la décompression des archives
+&Ignorer la décompression des archives
+La décompression des archives a été ignorée.

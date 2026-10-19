@@ -2,8 +2,8 @@
 ;  2.30 : Soeren Finster
 ;  4.07 : JAK-Software.DE
 ;  9.07 : Joachim Henke
-;
-;
+; 23.01 : René Gennes
+; 24.04 : Sandro Giallella
 ;
 ;
 ;
@@ -98,6 +98,8 @@ Favorit
 900
 &Optionen...
 &Benchmark
+910
+Temporäre Dateien löschen...
 960
 &Hilfethemen
 Ü&ber 7-Zip...
@@ -118,7 +120,7 @@ Verschlüsselt
 Vorher geteilt
 Danach geteilt
 Wörterbuch
-CRC
+
 Typ
 Anti
 Verfahren
@@ -133,7 +135,7 @@ Pfad
 Ordner
 Dateien
 Version
-Teilarchiv
+Archiv
 Mehrteiliges Archiv
 Offset
 Verknüpfungen
@@ -193,6 +195,11 @@ Harte Verknüpfung
 iNode
 
 Schreibgeschützt
+
+Kopiere Verknüpfung
+
+
+Metadaten geändert
 2100
 Optionen
 Sprache
@@ -241,12 +248,12 @@ Einfacher &Klick zum Öffnen
 Große &Speicherseiten verwenden
 2900
 Info über 7-Zip
-7-Zip ist freie Software. Sie können jedoch das Projekt durch eine Registrierung unterstützen.
+7-Zip ist freie Software.
 3000
-Das System kann die benötigte Speichermenge nicht bereit stellen.
+Das System kann die benötigte Speichermenge nicht bereitstellen.
 Es sind keine Fehler aufgetreten.
 {0} Objekt(e) markiert
-Kann den Ordner "{0}" nicht erstellen.
+Ich kann den Ordner "{0}" nicht erstellen.
 Aktualisierungen werden für dieses Archiv nicht unterstützt.
 Die Datei "{0}" kann nicht als Archiv geöffnet werden.
 Das verschlüsselte Archiv "{0}" kann nicht geöffnet werden. Falsches Passwort?
@@ -254,9 +261,9 @@ Typ des Archives wird nicht unterstützt
 Die Datei {0} existiert bereits.
 Die Datei "{0}" wurde geändert.\nSoll sie im Archiv aktualisiert werden?
 Die Datei konnte nicht aktualisiert werden.\n"{0}"
-Kann Editor nicht starten
-Die Datei scheint ein Virus zu sein (Dateiname enthält lange Reihen von Leerzeichen).
-Die Operation kann nicht aus einem Ordner mit langem Pfad aufgerufen werden.
+Ich kann Editor nicht starten.
+Die Datei könnte ein Virus sein (Der Dateiname enthält ungewöhnlich viele Leerzeichen).
+Operationen aus Ordnern mit überlangen Pfadangaben können nicht ausgeführt werden.
 Bitte genau eine Datei auswählen.
 Bitte mindestens eine Datei auswählen.
 Zu viele Objekte
@@ -275,7 +282,7 @@ Hinzufügen
 Aktualisieren
 Analysieren
 Replizieren
-Neu Packen
+Neu packen
 Überspringen
 Löschen
 Header erstellen
@@ -299,9 +306,12 @@ Vorhandene Dateien umbenennen
 3430
 Verdoppelung des Wurzelordners vermeiden
 Dateirechte wiederherstellen
+3440
+Vererbe Zone.Id-Strom
+Für Office-Dateien
 3500
 Überschreiben bestätigen
-Der Zielordner beinhaltet bereits eine Datei diesen Namens.
+Der Zielordner beinhaltet bereits eine Datei dieses Namens.
 Wollen Sie diese Datei
 durch diese ersetzen?
 {0} Bytes
@@ -392,6 +402,17 @@ Durchsuchen
 Alle Dateien
 Nicht solide
 Solide
+4080
+Zeit
+Zeitstempelpräzision:
+Speichere Änderungszeit
+Speichere Erstellungszeit
+Speichere letzte Zugriffszeit
+Setze Archivierungszeit auf letzte Dateizeit
+Ändere nicht die letzte Zugriffszeit der Quelldateien
+4090
+Sek
+ns
 6000
 Kopieren
 Verschieben
@@ -454,7 +475,7 @@ Teildateien &nach:
 In &Teildateien aufsplitten (Bytes):
 Aufsplitten...
 Aufsplitten bestätigen
-Sind Sie sicher, die Datei in {0} Teildateien aufsplitten zu wollen?
+Möchten Sie die Datei wirklich in {0} Teile aufteilen?
 Die Größe der Teildateien muss kleiner sein als die der ursprünglichen Datei.
 Ungültiger Wert für Dateigrößen
 Angegebene Größe für Teildateien: {0} Bytes.\nSind Sie sicher, dass das Archiv dementsprechend aufgesplittet werden soll?
@@ -463,13 +484,13 @@ Dateien zusammenfügen
 Zieldatei &nach:
 Zusammenfügen...
 Bitte nur den ersten Teil der Datei auswählen.
-Datei nicht als Teil einer aufgesplitteten Datei erkannt
-Kann nicht mehr als eine Teildatei finden.
+Datei konnte nicht als Teil einer aufgesplitteten Datei erkannt werden.
+Ich kann nicht mehr als eine Teildatei finden.
 7500
 Berechne Prüfsumme...
 Prüfsummen-Information
-CRC-Prüfsumme über die Daten:
-Prüfsumme über Daten und Namen:
+CRC-Prüfsumme für Daten:
+CRC-Prüfsumme für Daten und Dateinamen:
 7600
 Benchmark
 Speichernutzung:
@@ -493,3 +514,20 @@ Harte Verknüpfung
 Datei Symbolische Verknüpfung
 Ordner Symbolische Verknüpfung
 Ordner Verbindung
+7800
+Anfrage zur Speichernutzung
+Erlaubtes Limit für nachfolgende Operationen ändern
+Ausgewählte Aktion für die aktuelle Operation w&iederholen
+Aktion
+7810
+Die Operation wurde von 7-Zip blockiert
+Die Operation erfordert eine große Menge an Speicher (RAM).
+Erforderliche Speichernutzungsgröße
+Erlaubtes Speichernutzungslimit
+Von 7-Zip festgelegtes Speichernutzungslimit
+RAM-Größe
+Maximal erlaubte RAM-Nutzung zum Entpacken von Archiven:
+7820
+Archiventpackung z&ulassen
+Archiventpackung ü&berspringen
+Archiventpackung wurde übersprungen.

@@ -3,10 +3,10 @@
 ;                    : Jbc25
 ;       : 2007-09-05 : Guillermo Gabrielli
 ;  9.07 : 2010-06-10 : Purgossu
-;         2010-10-23 : Sergi Medina (corrected) 
-;
-;
-;
+;         2010-10-23 : Sergi Medina (corrected)
+; 18.00 : 2018-01-10 : Agustín Bou (updated)
+; 22.00 : 2023-05-13 : Toño Calo (updated and minor fixes)
+; 24.04 : 2024-04-25 : MELERIX (updated and various fixes)
 ;
 ;
 ;
@@ -29,39 +29,41 @@ Ayuda
 440
 Sí a &todo
 No a t&odo
-Parar
-Volver a empezar
-Se&gundo plano
-P&rimer plano
-&Pausa
+Detener
+Reiniciar
+&Segundo plano
+&Primer plano
+&Pausar
 Pausado
-¿Estás seguro de que deseas cancelar?
+¿Estás seguro de querer cancelar?
 500
 &Archivo
 &Editar
 &Ver
-&Favoritos
+F&avoritos
 &Herramientas
-Ay&uda
+&Ayuda
 540
 &Abrir
 Abrir &dentro
-Abrir &fuera
+Abrir f&uera
 &Ver
 &Editar
-Re&nombrar
+Reno&mbrar
 &Copiar a...
 &Mover a...
 &Borrar
-Di&vidir archivo...
-C&ombinar archivos...
-&Propiedades
-Comen&tario
-Suma de verificación
-Diff
+&Dividir archivo...
+Com&binar archivos...
+P&ropiedades
+Come&ntario
+Calcular suma de verificación
+Diferencia
 Crear carpeta
 Crear archivo
-&Salir
+S&alir
+Enlazar
+Flujos &alternativos
 600
 Seleccionar &todo
 Deseleccionar todo
@@ -71,69 +73,72 @@ Deseleccionar...
 Seleccionar por tipo
 Deseleccionar por tipo
 700
-Iconos g&randes
-&Iconos pequeños
+Iconos gra&ndes
+Iconos p&equeños
 &Lista
 &Detalles
 730
 Desordenado
-Vista plana (flat view)
+Vista plana
 &2 paneles
 &Barras de herramientas
-Abrir directorio raíz
-Subir un directorio
-Historia de carpetas...
+Abrir carpeta raíz
+Subir un nivel
+Historial de carpetas...
 &Actualizar
+Actualizar automáticamente
 750
-Barra de herramientas Archivo
-Barras de herramientas estándar
+Barra de herramientas de archivo comprimido
+Barra de herramientas estándar
 Botones grandes
-Mostrar texto en los botones
+Mostrar texto de botones
 800
-&Añadir carpeta a favoritos como
-Agregar a favoritos
+&Agregar carpeta a favoritos como
+Marcador
 900
 &Opciones...
-&Pruebas (benchmark)
+&Pruebas
+910
+Borrar archivos temporales...
 960
-&Contenido...
+&Contenidos...
 &Acerca de 7-Zip...
 1003
 Ruta
 Nombre
-Tipo de archivo
-Directorio
+Extensión
+Carpeta
 Tamaño
 Tamaño comprimido
 Atributos
 Creado
-Acceso
+Accedido
 Modificado
-Compacto
+Sólido
 Comentado
-Encriptado
-expandido antes
-expandido después
+Cifrado
+Dividir antes
+Dividir después
 Diccionario
-CRC
+
 Tipo
 Anti
 Método
-SO de origen
+SO anfitrión
 Sistema de archivos
 Usuario
 Grupo
 Bloque
 Comentario
 Posición
-Ruta
-Directorios
-Ficheros
+Prefijo de ruta
+Carpetas
+Archivos
 Versión
 Volumen
 Multivolumen
 Desplazamiento
-Vínculos
+Enlaces
 Bloques
 Volúmenes
 
@@ -141,16 +146,16 @@ Volúmenes
 Big-endian
 CPU
 Tamaño físico
-Tamaño de las cabeceras
-Verificación de suma
+Tamaño de encabezados
+Suma de verificación
 Características
 Dirección virtual
 ID
 Nombre corto
-Aplicación de creación
+Aplicación de creador
 Tamaño de sector
 Modo
-Enlace
+Enlace simbólico
 Error
 Espacio total
 Espacio libre
@@ -158,190 +163,286 @@ Tamaño de clúster
 Etiqueta
 Nombre local
 Proveedor
+Seguridad NT
+Flujo alternativo
+Auxiliar
+Borrado
+Es árbol
+
+
+Tipo de error
+Errores
+Errores
+Advertencias
+Advertencia
+Flujos
+Flujos alternativos
+Tamaño de flujos alternativos
+Tamaño virtual
+Tamaño de descompresión
+Tamaño físico total
+Índice de volumen
+Subtipo
+Comentario corto
+Página de código
+
+
+
+Tamaño de cola
+Tamaño del trozo integrado
+Enlace
+Enlace duro
+iNodo
+
+Solo lectura
+
+Copiar enlace
+
+
+Metadatos cambiados
 2100
 Opciones
-Lengua
-Lengua:
+Lenguaje
+Lenguaje:
 Editor
 &Editor:
-&Diff:
+&Diferencia:
 2200
 Sistema
 Asociar 7-Zip con:
+Todos los usuarios
 2301
-Integrar 7-Zip en el menú contextual de Windows
+Integrar 7-Zip al menú contextual del shell
 Menú contextual en cascada
-Elementos en el menú contextual:
+Elementos del menú contextual:
+Iconos en el menú contextual
 2320
 <Carpeta>
-<Archivo>
-Abrir comprimido
-Extraer ficheros...
-Añadir al archivo...
-Comprobar archivo
+<Archivo comprimido>
+Abrir archivo comprimido
+Extraer archivos...
+Agregar al archivo comprimido...
+Probar archivo comprimido
 Extraer aquí
-Extraer en {0}
-Añadir a {0}
-Comprimir y enviar por correo...
-Comprimir a {0} y enviar por correo
+Extraer a {0}
+Agregar a {0}
+Comprimir y enviar por correo electrónico...
+Comprimir a {0} y enviar por correo electrónico
 2400
-Directorios
-Directorio de &trabajo
-Directorio temporal del &sistema
-Directorio &actual
-&Especificar directorio:
-Usar solo para dispositivos extraíbles
-Especificar un directorio para archivos temporales.
+Carpetas
+Carpeta de &trabajo
+Carpeta temporal del &sistema
+&actual
+&especificada:
+Usar solo para unidades removibles
+Especificar una ubicación para los archivos temporales de archivos comprimidos.
 2500
-Propiedades
+Ajustes
 Mostrar el elemento ".."
-Mostrar iconos propios
+Mostrar iconos de archivos reales
 Mostrar menú del sistema
-&Seleccionar fila(s) entera(s)
-Mostrar &cuadrícula
-Clicar una vez para abrir elemento
+&Seleccionar fila completa
+Mostrar líneas de &cuadrícula
+Un solo clic para abrir un elemento
 Modo de selección &alternativo
 Usar páginas &grandes de memoria
 2900
 Acerca de 7-Zip
-7-Zip es un programa excelente; además, es libre y gratuito. Tú puedes apoyar el desarrollo de 7-Zip registrándote para contribuir a mejorar el programa.
+7-Zip es software libre.
 3000
-El sistema no ha podido asignar la cantidad necesaria de memoria
+El sistema no puede asignar la cantidad requerida de memoria
 No hay errores
-{0} elemento(s) seleccionado(s)
-No se puede crear el directorio '{0}'
-Este tipo de archivo no permite actualización.
-No se puede abrir '{0}' como un archivo comprimido
-No se puede abrir el archivo encriptado '{0}'. Verifique la contraseña.
-Tipo de archivo no soportado
-El fichero {0} ya existe
-El fichero '{0}' ha sido modificado.\n¿Quieres actualizarlo en el archivo?
-No puede actualizarse el fichero\n'{0}'
-No puede ejecutarse el editor.
-El fichero parece un virus (el nombre del fichero contiene espacios largos).
-No puede realizarse la operación desde una carpeta que tenga una ruta larga.
-Debes seleccionar un fichero
-Debes seleccionar uno o más ficheros
+{0} objeto(s) seleccionado(s)
+No se puede crear la carpeta '{0}'
+Las operaciones de actualización no están soportadas para este archivo comprimido.
+No se puede abrir el archivo '{0}' como un archivo comprimido
+No se puede abrir el archivo comprimido cifrado '{0}'. ¿Contraseña incorrecta?
+Tipo de archivo comprimido no soportado
+El archivo {0} ya existe
+El archivo '{0}' fue modificado.\n¿Quieres actualizarlo en el archivo comprimido?
+No se puede actualizar el archivo\n'{0}'
+No se puede iniciar el editor.
+El archivo parece un virus (el nombre del archivo contiene espacios largos en el nombre).
+La operación no puede ser llamada desde una carpeta que tenga una ruta larga.
+Debes seleccionar un archivo
+Debes seleccionar uno o más archivos
 Demasiados elementos
+No se puede abrir el archivo como archivo comprimido {0}
+El archivo está abierto como archivo comprimido {0}
+El archivo comprimido está abierto con desplazamiento
 3300
-extrayendo
-comprimiendo
-probando
-abriendo...
-Buscando...
+Extrayendo
+Comprimiendo
+Probando
+Abriendo...
+Escaneando...
+Removiendo
+3320
+Agregando
+Actualizando
+Analizando
+Replicando
+Recomprimiendo
+Omitiendo
+Borrando
+Creando cabecera
 3400
 Extraer
 E&xtraer a:
-Selecciona destino para los archivos extraídos.
+Especifica una ubicación para los archivos extraídos.
 3410
-Modo de directorio
-Directorio completo
-Sin directorio
+Modo de ruta:
+Nombres de ruta completos
+Sin nombres de ruta
+Nombres de ruta absolutos
+Nombres de ruta relativos
 3420
-Sobreescribir
-Con confirmación
-Sin confirmación
-Conservar archivos existentes
+Modo de sobrescritura:
+Preguntar antes de sobrescribir
+Sobrescribir sin preguntar
+Omitir archivos existentes
 Renombrar automáticamente
-Autorrenombrar archivos existentes
+Renombrar automáticamente archivos existentes
+3430
+Eliminar duplicado de carpeta raíz
+Restaurar seguridad del archivo
+3440
+Propagar flujo Zone.Id:
+Para archivos Office
 3500
-Confirmar sustitución de archivos
-El directorio ya contiene un archivo con el mismo nombre.
-¿Deseas sustituir el archivo existente
-por este otro?
+Confirmar remplazo de archivo
+La carpeta de destino ya contiene el archivo procesado.
+¿Quieres remplazar el archivo existente
+con este otro?
 {0} bytes
 Renombrar a&utomáticamente
 3700
-Método de compresión no válido para '{0}'.
-Error de datos en '{0}'. El archivo está corrupto.
-CRC ha fallado en '{0}'. El archivo está corrupto.
-Error de datos en el archivo encriptado '{0}'. Verifica la contraseña.
-Fallo de CRC en el archivo encriptado '{0}'. Verifica la contraseña.
+Método de compresión no soportado para '{0}'.
+Error de datos en '{0}'. El archivo está roto.
+CRC fallida en '{0}'. El archivo está roto.
+Error de datos en archivo cifrado '{0}'. ¿Contraseña incorrecta?
+CRC fallida en archivo cifrado '{0}'. ¿Contraseña incorrecta?
+3710
+¿Contraseña incorrecta?
+3721
+Método de compresión no soportado
+Error de datos
+CRC fallida
+Datos no disponibles
+Final de datos inesperado
+Hay algunos datos después del final de los datos de carga útil.
+No es un archivo comprimido
+Error de encabezados
+Contraseña incorrecta
+3763
+Inicio del archivo comprimido no disponible
+Inicio del archivo comprimido sin confirmar
+
+
+
+Característica no soportada
 3800
-Introduce la contraseña
-E&scribe la contraseña:
-Escribe nue&vamente la contraseña:
-&Mostrar la contraseña
-Las contraseñas son diferentes. Por favor, vuelve a escribirlas.
-Usa en la contraseña solamente letras del alfabeto inglés, números y caracteres especiales (!, #, $, ...)
+Ingresar contraseña
+Ingresar contraseña:
+Reingresar contraseña:
+&Mostrar contraseña
+Las contraseñas no coinciden
+Usa solo letras en inglés, números y caracteres especiales (!, #, $, ...) para la contraseña
 La contraseña es demasiado larga.
 Contraseña
 3900
 Tiempo transcurrido:
-Tiempo pendiente:
-Tamaño:
+Tiempo restante:
+Tamaño total:
 Velocidad:
 Procesado:
-Razón de compresión:
+Relación de compresión:
 Errores:
-Archivos:
+Archivos comprimidos:
 4000
-Añadir al archivo
-&Archivo:
-M&odo de actualización:
-&Formato de archivo:
-Nive&l de compresión:
-&Tipo de compresión:
-Tamaño de &diccionario:
-Tama&ño de la palabra:
-Tamaño de bloque compacto:
+Agregar al archivo comprimido
+&Archivo comprimido:
+&Modo de actualización:
+&Formato del archivo comprimido:
+&Nivel de compresión:
+&Método de compresión:
+Tamaño del &diccionario:
+Tamaño de la &palabra:
+Tamaño de bloque sólido:
 Número de hilos de la CPU:
 &Parámetros:
 Opciones
-Crear archivo SF&X (autoextraíble)
-Comprimir archivos abiertos para escritura
-Encriptación
-Método de &encriptación:
-Encriptar &nombres de fichero
+Crear archivo comprimido SF&X
+Comprimir archivos compartidos
+Cifrado
+Método de cifrado:
+Cifrar &nombres de archivo
 Memoria usada para comprimir:
 Memoria usada para descomprimir:
+Borrar archivos después de la compresión
+4040
+Almacenar enlaces simbólicos
+Almacenar enlaces físicos
+Almacenar flujos de datos alternativos
+Almacenar seguridad del archivo
 4050
-Sin compresión
+Almacenar
 La más rápida
 Rápida
 Normal
 Máxima
 Ultra
 4060
-Añadir y sustituir archivos
-Actualizar y añadir archivos
-Solo actualizar archivos
+Agregar y remplazar archivos
+Actualizar y agregar archivos
+Actualizar archivos existentes
 Sincronizar archivos
 4070
 Explorar
 Todos los archivos
-No compacto
-Sin límite
+No sólido
+Sólido
+4080
+Tiempo
+Precisión de marca de tiempo:
+Almacenar tiempo de modificación
+Almacenar tiempo de creación
+Almacenar tiempo de último acceso
+Establecer el tiempo del archivo comprimido al último tiempo del archivo
+No cambiar el tiempo de último acceso a los archivos fuente
+4090
+seg
+ns
 6000
 Copiar
 Mover
 Copiar a:
 Mover a:
-copiado...
-movido...
+Copiando...
+Moviendo...
 Renombrando...
-Selecciona la carpeta de destino
-Operación no permitida.
-Error renombrando fichero o carpeta
-Confirmar copia de ficheros
-¿Estás seguro de que deseas copiar los ficheros al archivo
+Selecciona carpeta de destino
+La operación no está soportada para esta carpeta.
+Error renombrando archivo o carpeta
+Confirmar copia de archivo
+¿Estás seguro de querer copiar los archivos al archivo comprimido?
 6100
 Confirmar borrado de archivo
 Confirmar borrado de carpeta
-Confirmar borrado de numerosos ficheros
+Confirmar borrado múltiple de archivos
 ¿Estás seguro de querer borrar '{0}'?
-¿Estás seguro de querer borrar la carpeta '{0}' y todo su contenido?
+¿Estás seguro de querer borrar la carpeta '{0}' y todos sus contenidos?
 ¿Estás seguro de querer borrar estos {0} elementos?
 Borrando...
-Error borrando fichero o carpeta
-El sistema no puede mover un fichero con ruta larga a la Papelera de Reciclaje
+Error borrando archivo o carpeta
+El sistema no puede mover un archivo con ruta larga a la papelera de reciclaje
 6300
 Crear carpeta
 Crear archivo
 Nombre de carpeta:
 Nombre de archivo:
-Carpeta nueva
-Archivo nuevo
+Nueva carpeta
+Nuevo archivo
 Error creando carpeta
 Error creando archivo
 6400
@@ -356,8 +457,8 @@ Historial de carpetas
 Mensajes de diagnóstico
 Mensaje
 7100
-Mi PC
-Entorno de red
+Este equipo
+Red de trabajo
 Documentos
 Sistema
 7200
@@ -370,35 +471,63 @@ Borrar
 Información
 7300
 Dividir archivo
-Di&vidir a:
-Dividir en fra&gmentos (bytes):
+&Dividir a:
+Dividir en &volúmenes, bytes:
 Dividiendo...
 Confirmar división
-¿Estás seguro de que deseas dividir el archivo en {0} partes?
-El tamaño de los fragmentos debe ser menor que el del archivo original
-Tamaño de fragmento incorrecto
-Tamaño de fragmento especificado: {0} bytes.\n¿Estás seguro de que deseas dividir el archivo en fragmentos de ese tamaño?
+¿Estás seguro de querer dividir el archivo en {0} volúmenes?
+El tamaño de los volúmenes debe ser menor que el del archivo original
+Tamaño de volumen incorrecto
+Tamaño de volumen especificado: {0} bytes.\n¿Estás seguro de querer dividir el archivo comprimido en dichos volúmenes?
 7400
 Combinar archivos
 &Combinar a:
 Combinando...
-Selecciona solamente el primer archivo
-No se ha podido detectar el fichero como parte de un fichero por volúmenes
-No se ha podido encontrar más que un fragmento del fichero por volúmenes
+Selecciona solo la primera parte del archivo dividido
+No se puede detectar el archivo como parte de un archivo dividido
+No se puede encontrar más que una parte del archivo dividido
 7500
 Calculando suma de verificación...
-Suma de verificación (CRC)
-CRC de los datos:
-CRC de los datos y nombres:
+Información de suma de verificación
+Suma de verificación CRC para datos:
+Suma de verificación CRC para datos y nombres:
 7600
-Pruebas (benchmark)
+Pruebas
 Uso de memoria:
 Compresión
 Descompresión
-Tasa
-Tasa total
+Valoración
+Valoración total
 Actual
 Resultante
 Uso de CPU
-Resultante/uso
+Valoración / Uso
 Pasos:
+7700
+Enlazar
+Enlazar
+Enlazar desde:
+Enlazar hacia:
+7710
+Tipo de enlace
+Enlace duro
+Enlace simbólico de archivo
+Enlace simbólico de directorio
+Empalme de directorio
+7800
+Solicitud de uso de memoria
+Cambiar el límite permitido para las próximas operaciones
+&Repetir la acción seleccionada para la operación actual
+Acción
+7810
+La operación fue bloqueada por 7-Zip.
+La operación requiere una gran cantidad de memoria (RAM).
+tamaño de uso de memoria requerido
+límite de uso de memoria permitido
+límite de uso de memoria establecido por 7-Zip
+Tamaño de RAM
+Cantidad máxima de memoria RAM permitida para descomprimir archivos comprimidos:
+7820
+&Permitir descompresión del archivo comprimido
+&Omitir descompresión del archivo comprimido
+Se ha omitido la descompresión del archivo comprimido.

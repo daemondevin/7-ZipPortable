@@ -204,7 +204,7 @@ Vis &rutenett
 Bruk &store minnesider
 2900
 Om 7-Zip
-7-Zip er fri programvare. Du kan støtta utviklinga av 7-Zip ved å registrere deg.
+7-Zip er fri programvare.
 3000
 
 Ingen feil

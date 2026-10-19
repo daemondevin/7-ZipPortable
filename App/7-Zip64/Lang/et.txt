@@ -204,7 +204,7 @@ Ava üksus ühe klõpsuga
 Kasuta &suuri mälulehekülgi
 2900
 Teave 7-Zipi kohta
-7-Zip on vaba tarkvara. Kuid kui soovite toetada 7-Zipi arendamist, siis saate programmi registreerida.\n\n7-Zipi Eesti koduleht:\nhttp://www.hot.ee/somberg/7zip.html
+7-Zip on vaba tarkvara.
 3000
 Süsteem ei saa eraldada nõutavat mälumahtu.
 Vigu ei leitud.

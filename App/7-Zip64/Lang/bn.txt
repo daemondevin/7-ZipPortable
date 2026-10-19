@@ -1,5 +1,5 @@
 ﻿;!@Lang2@!UTF-8!
-;  4.46 : Team Oruddho (Fahad Mohammad Shaon, Mahmud Hassan) : http://www.oruddho.com
+;  4.46 : Team Oruddho (Fahad Mohammad Shaon, Mahmud Hassan)
 ;
 ;
 ;

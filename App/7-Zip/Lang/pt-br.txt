@@ -1,7 +1,7 @@
 ﻿;!@Lang2@!UTF-8!
 ;        : Francisco Jr
-;  4.37  : Fabricio Biazzotto 
-;  15.07 : Atualizado por Felipe
+;  4.37  : Fabricio Biazzotto
+;  24.06 : Atualizado por Felipe
 ;
 ;
 ;
@@ -71,7 +71,7 @@ Desmarcar Tudo
 Selecionar...
 Desmarcar...
 Selecionar por Tipo
-Desfazer seleção por Tipo
+Desfazer a Seleção por Tipo
 700
 Íco&nes Grandes
 Íc&ones Pequenos
@@ -93,11 +93,13 @@ Barra de Ferramentas Padrão
 Botões Grandes
 Mostrar o Texto dos Botões
 800
-&Adicionar a pasta aos Favoritos como
+&Adicionar a pasta aos favoritos como
 Favorito
 900
 &Opções...
 &Benchmark
+910
+Apagar Arquivos Temporários...
 960
 &Conteúdo...
 &Sobre o 7-Zip...
@@ -107,7 +109,7 @@ Nome
 Extensão
 Pasta
 Tamanho
-Tamanho Compactado
+Tamanho compactado
 Atributos
 Criado
 Acessado
@@ -134,7 +136,7 @@ Pastas
 Arquivos
 Versão
 Volume
-Multivolume
+Multi-volume
 Offset
 Links
 Blocos
@@ -177,7 +179,7 @@ Correntes
 Correntes Alternantes
 Tamanho das Correntes Alternantes
 Tamanho Virtual
-Tempo Descompactado
+Tamanho Descompactado
 Total do Tamanho Físico
 Índice do Volume
 Sub-Tipo
@@ -193,6 +195,11 @@ Link Rígido
 iNode
 
 Somente-Leitura
+
+Copiar Link
+
+
+Metadados Mudados
 2100
 Opções
 Idioma
@@ -216,11 +223,11 @@ Abrir arquivo compactado
 Extrair arquivos...
 Adicionar ao arquivo compactado...
 Testar arquivo compactado
-Extrair Aqui
-Extrair para {0}
-Adicionar para {0}
+Extrair aqui
+Extrair em {0}
+Adicionar como {0}
 Comprimir e enviar por email...
-Comprimir para {0} e enviar por email
+Comprimir como {0} e enviar por email
 2400
 Pastas
 &Pasta de trabalho
@@ -228,7 +235,7 @@ Pastas
 &Atual
 &Especificada:
 Usar só pra drives removíveis
-Especifique um local pros arquivos compactados temporários.
+Especifique um local pros arquivos do arquivo compactado temporário.
 2500
 Configurações
 Mostrar o item ".."
@@ -241,7 +248,7 @@ Clique único pra abrir um item
 Usar &grandes páginas de memória
 2900
 Sobre o 7-Zip
-7-Zip é um software grátis
+O 7-Zip é um software grátis
 3000
 O sistema não pôde alocar a quantia requerida de memória
 Não há erros
@@ -249,7 +256,7 @@ Não há erros
 Não pôde criar a pasta '{0}'
 Operações de atualização não são suportadas por este arquivo compactado.
 Não pôde abrir o arquivo '{0}' como arquivo compactado
-Não pôde abrir o arquivo compactado encriptado '{0}'. Senha errada?
+Não pôde abrir o arquivo compactado criptografado '{0}'. Senha errada?
 Tipo de arquivo compactado não suportado
 O arquivo {0} já existe
 O arquivo '{0}' foi modificado.\nVocê quer atualizá-lo no arquivo compactado?
@@ -286,7 +293,7 @@ Especifique um local pros arquivos extraídos.
 3410
 Modo do caminho:
 Nomes dos caminhos completos
-Sem nomes de caminhos
+Não há nomes pros caminhos
 Nomes dos caminhos absolutos
 Nomes dos caminhos relativos
 3420
@@ -299,19 +306,22 @@ Auto-renomear os arquivos existentes
 3430
 Eliminar duplicação da pasta raiz
 Restaurar a segurança do arquivo
+3440
+Propagar o fluxo do Zone.Id:
+Pros arquivos do Office
 3500
 Confirmar a Substituição dos Arquivos
-A pasta destino já contém o arquivo processado.
+A pasta de destino já contém o arquivo processado.
 Você gostaria de substituir o arquivo existente
 por este?
 {0} bytes
-A&uto-Renomear
+A&uto-renomear
 3700
 Método de compressão não suportado por '{0}'.
-Erro nos dados de '{0}'. O arquivo está danificado.
-O CRC falhou em '{0}'. O arquivo está danificado.
-Erros nos dados do arquivo encriptado '{0}'. Senha errada?
-O CRC falhou no arquivo encriptado '{0}'. Senha errada?
+Erro nos dados do '{0}'. O arquivo está danificado.
+O CRC falhou no '{0}'. O arquivo está danificado.
+Erros nos dados do arquivo criptografado '{0}'. Senha errada?
+O CRC falhou no arquivo criptografado '{0}'. Senha errada?
 3710
 Senha errada?
 3721
@@ -322,7 +332,7 @@ Dados indisponíveis
 Fim inesperado dos dados
 Há alguns dados após o fim da carga dos dados
 Não é arquivo compactado
-Erro dos Cabeçalhos
+Erro dos cabeçalhos
 Senha errada
 3763
 Início indisponível do arquivo compactado
@@ -337,7 +347,7 @@ Inserir senha:
 Re-inserir a senha:
 &Mostrar senha
 As senhas não combinam
-Usar apenas letras em Inglês, números e caracteres especiais (!, #, $, ...) para a senha
+Usar apenas letras em inglês, números e caracteres especiais (!, #, $, ...) para a senha
 A senha é muito longa
 Senha
 3900
@@ -346,9 +356,9 @@ Tempo restante:
 Tamanho total:
 Velocidade:
 Processados:
-Taxa de compressão:
+Taxa da compressão:
 Erros:
-Arquivos:
+Arquivos compactados:
 4000
 Adicionar ao arquivo compactado
 &Arquivo compactado:
@@ -367,8 +377,8 @@ Comprimir arquivos compartilhados
 Encriptação
 Método de encriptação:
 Criptografar os &nomes dos arquivos
-Uso de memória pra Compressão:
-Uso de memória para Descompressão:
+Uso de memória pra compressão:
+Uso de memória pra descompressão:
 Apagar arquivos após a compressão
 4040
 Armazenar links simbólicos
@@ -392,6 +402,17 @@ Navegar
 Todos os Arquivos
 Não-sólido
 Sólido
+4080
+Tempo
+Precisão do tempo:
+Armazenar o tempo de modificação
+Armazenar o tempo da criação
+Armazenar o tempo do último acesso
+Definir o tempo do arquivo compactado no tempo do arquivo mais recente
+Não mudar o tempo do último acesso dos arquivos de origem
+4090
+segs
+ns
 6000
 Copiar
 Mover
@@ -400,7 +421,7 @@ Mover para:
 Copiando...
 Movendo...
 Renomeando...
-Selecionar a pasta destino.
+Selecionar a pasta de destino.
 A operação não é suportada por esta pasta.
 Erro ao Renomear o Arquivo ou Pasta
 Confirmar a Cópia do Arquivo
@@ -418,7 +439,7 @@ O sistema não pode mover um arquivo com caminho longo para o Recycle Bin
 6300
 Criar Pasta
 Criar Arquivo
-Nome da pasta:
+Nome da Pasta:
 Nome do Arquivo:
 Nova Pasta
 Novo Arquivo
@@ -450,7 +471,7 @@ Apagar
 Info
 7300
 Dividir Arquivo
-&Dividir para:
+&Dividir em:
 Dividir em &volumes, bytes:
 Dividindo...
 Confirmar a Divisão
@@ -468,8 +489,8 @@ Não pôde achar mais do que uma parte do arquivo dividido
 7500
 Calculando checksum...
 Informação do checksum
-Checksum do CRC pros dados:
-Checksum do CRC pros dados e nomes:
+Checksum do CRC pelos dados:
+Checksum do CRC pelos dados e nomes:
 7600
 Benchmark
 Uso da memória:
@@ -481,7 +502,7 @@ Atual
 Resultando
 Uso da CPU
 Avaliação / Uso
-Passos:
+Passes:
 7700
 Link
 Link
@@ -493,3 +514,20 @@ Link Rígido
 Link Simbólico do Arquivo
 Link Simbólico do Diretório
 Junção do Diretório
+7800
+Requisição do uso de memória
+Mudar o limite permitido pras operações seguintes
+&Repetir a ação selecionada pra operação atual
+Ação
+7810
+A operação foi bloqueada pelo 7-Zip.
+A operação requer grande quantidade de memória (RAM).
+Tamanho do uso de memória requerida
+Limite de uso da memória permitida
+Limite de uso da memória definido pelo 7-Zip
+Tamanho da RAM
+Quantidade máxima do uso de memória RAM permitido pra desempacotar os arquivos compactados:
+7820
+&Permitir o desempacotamento dos arquivos compactados
+&Ignorar o desempacotamento dos arquivos compactados
+O desempacotamento dos arquivos compactados foi ignorado.

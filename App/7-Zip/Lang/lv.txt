@@ -204,7 +204,7 @@ Parādīt at&dalošās līnijas
 
 2900
 Par 7-Zip
-7-Zip ir bezmaksas programma, tomēr, reģistrējoties jūs varat 7-Zip izstrādāšanu atbalstīt.
+7-Zip ir bezmaksas programma.
 3000
 
 Kļūdu nav.

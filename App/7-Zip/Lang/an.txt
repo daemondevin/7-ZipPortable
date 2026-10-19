@@ -204,7 +204,7 @@ Modo de selección &alternativo
 Emplegar pachinas de memoria &grans
 2900
 Arredol de 7-Zip
-7-Zip ye un programa libre y gratuito. Si quiers, puetz colaborar en o desembolique de 7-Zip rechistrando-te ta contribuyir a amillorar o programa.
+7-Zip ye un programa libre y gratuito.
 3000
 O sistema no ha puesto asignar a cantidat necesaria de memoria
 No i hai errors

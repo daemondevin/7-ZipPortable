@@ -1,13 +1,13 @@
 ﻿;!@Lang2@!UTF-8!
-;       : Carlos Macao
-;       : João Alves
-;       : João Frade (100 NOME TR)
-;  4.46 : Rui Costa
-;  9.17 : Sérgio Marques 
-; 15.00 : Rui Aguiar
-;
-;
-;
+;       :            : Carlos Macao
+;       :            : João Alves
+;       :            : João Frade (100 NOME TR)
+;  4.46 :            : Rui Costa
+;  9.17 :            : Sérgio Marques
+; 15.00 :            : Rui Aguiar
+; 15.00 : 2022-03-22 : Hugo Carvalho
+; 22.00 : 2022-06-28 : Hugo Carvalho
+; 24.07 : 2024-06-18 : Hugo Carvalho
 ;
 ;
 0
@@ -15,7 +15,7 @@
 Portuguese Portugal
 Português
 401
-OK
+Aceitar
 Cancelar
 
 
@@ -27,8 +27,8 @@ Ajuda
 
 &Continuar
 440
-Sim p/ &Todos
-Não p/ T&odos
+Sim a &tudo
+Não a t&udo
 Parar
 Reiniciar
 &Segundo plano
@@ -53,7 +53,7 @@ Mudar& o nome
 &Copiar para...
 &Mover para...
 &Eliminar
-&Separar ficheiro...
+&Dividir ficheiro...
 Com&binar ficheiros...
 P&ropriedades
 Come&ntário
@@ -62,34 +62,34 @@ Diff
 Criar pasta
 Criar ficheiro
 &Sair
-Link
-&Alternar Fluxo
+Ligação
+&Alternar fluxos
 600
-Seleccionar &Tudo
-Desmarcar tudo
+Seleccionar &tudo
+Desseleccionar tudo
 &Inverter selecção
 Seleccionar...
-Desmarcar...
+Dessseleccionar...
 Seleccionar por tipo
-Desmarcar por tipo
+Desseleccionar por tipo
 700
 Ícones &grandes
 Ícones &pequenos
 &Lista
 &Detalhes
 730
-Sem ordem
+Desordenado
 Vista plana
 &2 painéis
 &Barras de ferramentas
-Abrir pasta root
+Abrir pasta principal
 Subir um nível
 Histórico de pastas...
 &Actualizar
-Auto Actualizar
+Actualizar automaticamente
 750
 Barra de ferramentas do arquivo
-Barra de ferramentas pré-definida
+Barra de ferramentas predefinida
 Botões grandes
 Mostrar a legenda dos botões
 800
@@ -98,31 +98,33 @@ Marcador
 900
 &Opções...
 &Desempenho
+910
+Eliminar ficheiros temporários...
 960
 &Conteúdo...
 &Acerca do 7-Zip...
 1003
-Caminho
+Localização
 Nome
 Extensão
-pasta
+Pasta
 Tamanho
 Tamanho comprimido
 Atributos
 Criado
 Acedido
 Modificado
-sólido
+Sólido
 Comentado
 Encriptado
-Separar antes
-Separar depois
+Dividir antes
+Dividir depois
 Dicionário
 
 Tipo
 Anti
 Método
-SO anfitrião
+Sistema Operativo
 Sistema de ficheiros
 Utilizador
 Grupo
@@ -130,8 +132,8 @@ Bloco
 Comentário
 Posição
 Prefixo do destino
-pastas
-ficheiros
+Pastas
+Ficheiros
 Versão
 Volume
 Multivolume
@@ -153,7 +155,7 @@ Abreviatura
 Criador da aplicação
 Tamanho do sector
 Modo
-Ligação
+Ligação simbólica
 Erro
 Tamanho total
 Espaço livre
@@ -164,7 +166,7 @@ Fornecedor
 Segurança NT
 Alternar Fluxo
 Aux
-Excluído
+Eliminado
 É Árvore
 
 
@@ -188,11 +190,16 @@ Página de Código
 
 Tamanho Tail
 Tamanho Stub Incorporado
-Link
-Link do Disco Rígido
+Ligação
+Ligação física
 iNode
 
-Só de leitura
+Apenas leitura
+
+Copiar ligação
+
+
+Metadados alterados
 2100
 Opções
 Idioma
@@ -208,7 +215,7 @@ Todos os utilizadores
 Integrar o 7-Zip no menu de contexto
 Menu de contexto em cascata
 Itens do menu de contexto:
-Icons no menu de contexto
+Ícones no menu de contexto
 2320
 <Pasta>
 <Arquivo>
@@ -222,7 +229,7 @@ Adicionar a {0}
 Comprimir e enviar por e-mail...
 Comprimir para {0} e enviar por e-mail
 2400
-pastas
+Pastas
 &Pasta de trabalho
 Pasta &temporária
 &Actual
@@ -241,19 +248,19 @@ Modo de seleçção &alternativo
 Utilizar páginas de &memória grandes
 2900
 Acerca do 7-Zip
-O 7-Zip é um programa gratuito.\n\nO 7-Zip foi traduzido por: Rui Aguiar\n\trui_a_aguiar@hotmail.com
+O 7-Zip é um programa gratuito.
 3000
-O sistema não consegue alocar a memória necessária
+O sistema não consegue atribuir a memória necessária
 Não existem erros
 {0} objecto(s) seleccionado(s)
 Não é possível criar a pasta '{0}'
-Este tipo de arquivo não permite actualizações.
+Este tipo de arquivo não permite atualizações.
 Não é possível abrir o ficheiro '{0}' como arquivo
 Não é possível abrir o arquivo encriptado '{0}'. Palavra-passe errada?
 O arquivo não é suportado
 Já existe o ficheiro {0}
-O ficheiro '{0}' foi modificado.\nQuer actualizá-lo no arquivo?
-Não foi possível actualizar o ficheiro\n'{0}'
+O ficheiro '{0}' foi modificado.\nQuer atualizá-lo no arquivo?
+Não foi possível atualizar o ficheiro\n'{0}'
 Não foi possível iniciar o editor.
 O ficheiro parece ser um vírus (o nome do ficheiro contém muitos espaços em branco).
 A operação não pode ser invocada a partir de uma pasta com uma longa localização.
@@ -262,47 +269,50 @@ Tem que seleccionar um ou mais ficheiros
 Demasiados itens
 Não é possível abrir o ficheiro como arquivo {0}
 Ficheiro aberto como arquivo {0}
-Arquivo aberto com offset
+Arquivo aberto com compensação
 3300
 A extrair...
 A comprimir
 A testar...
 A abrir...
 A pesquisar...
-Removendo
+A remover
 3320
 A adicionar...
-A actualizar...
+A atualizar...
 A analisar...
-Replicando
+A replicar
 A recomprimir...
 A ignorar...
 A eliminar
-Criando cabeçalho
+A criar cabeçalho
 3400
 Extrair
 E&xtrair para:
-Especifique o destino para os ficheiros extraídos.
+Especifique a localização para os ficheiros extraídos.
 3410
-Modo de nome de pasta
-Nome de pastas completo
-Sem nome de pastas
-Caminhos absolutos
-Caminhos relativos
+Modo de localização
+Localizações completas
+Sem localizações
+Localizações absolutas
+Localizações relativas
 3420
-Modo de sobrescrever
+Modo de substituição
 Perguntar antes de substituir
 Sem confirmação
 Ignorar ficheiros existentes
-Mudar o nome automaticamente.
-Mudar o nome automomaticamente os ficheiros existentes
+Mudar o nome automaticamente
+Mudar o nome automaticamente os ficheiros existentes
 3430
 Eliminar a duplicação da pasta de raiz
 Restaurar segurança de ficheiros
+3440
+Propagar fluxo Zone.Id:
+Para ficheiros do Office
 3500
 Confirmar substituição de ficheiro
 A pasta já possui um ficheiro com o mesmo nome.
-Deseja substituir o ficheiro existente
+Quer substituir o ficheiro existente
 por este?
 {0} bytes
 Mudar o nome a&utomaticamente
@@ -310,10 +320,10 @@ Mudar o nome a&utomaticamente
 O método de compressão é inválido para '{0}'.
 Erro de dados em '{0}'. O arquivo está danificado.
 CRC falhou em '{0}'. O arquivo está danificado.
-Erro de dados no ficheiro encriptado '{0}'. Palavra-passe errada?
-CRC falhou no ficheiro encriptado '{0}'. Palavra-passe errada?
+Erro de dados no ficheiro encriptado '{0}'. Palavra-passe incorrecta?
+CRC falhou no ficheiro encriptado '{0}'. Palavra-passe incorrecta?
 3710
-Palavra-passe errada?
+Palavra-passe incorrecta?
 3721
 Método de compressão não suportado
 Erro nos dados
@@ -322,8 +332,8 @@ Dados indisponíveis
 Fim inesperado nos dados
 Existem alguns dados após o final dos dados de carga útil
 Não é um arquivo
-Erro nos Cabeçalhos
-Palavra-passe errada
+Erro nos cabeçalhos
+Palavra-passe incorrecta
 3763
 Início de arquivo indisponível
 Início de arquivo não confirmado
@@ -332,12 +342,12 @@ Início de arquivo não confirmado
 
 Funcionalidade não suportada
 3800
-Insira a palavra-passe
+Introduza a palavra-passe
 Introduza a palavra-passe:
 Reintroduza a palavra-passe:
 &Mostrar palavra-passe
 As palavras-passe não coincidem
-Para a palavra-passe, utilize apenas letras inglesas, números e os caracteres especiais (!, #, $, ...)
+Para a palavra-passe, utilize apenas letras Inglesas, números e os caracteres especiais (!, #, $, ...)
 A palavra-passe é muito comprida
 Palavra-passe
 3900
@@ -352,7 +362,7 @@ Arquivos:
 4000
 Adicionar ao arquivo
 &Arquivo:
-&Modo de actualização:
+&Modo de atualização:
 &Formato do arquivo:
 Níve&l de compressão:
 Método de &compressão:
@@ -369,10 +379,10 @@ Método de encriptação:
 Encriptar &nomes de ficheiros
 Utilização de memória para compressão:
 Utilização de memória para descompressão:
-Excluir ficheiros após compressão
+Eliminar ficheiros após compressão
 4040
-Armazenar links simbólicos
-Armazenar links do disco rígido
+Armazenar ligações simbólicos
+Armazenar ligações físicas
 Armazenar fluxo de dados alternados
 Armazenar segurança de ficheiros
 4050
@@ -391,7 +401,18 @@ Sincronizar ficheiros
 Procurar
 Todos os ficheiros
 Não sólido
-sólido
+Sólido
+4080
+Data
+Precisão da data:
+Última modificação
+Data de criação
+Último acesso
+Definir data de arquivo para a última data de arquivo
+Não alterar a data do último acesso
+4090
+s
+ns
 6000
 Copiar
 Mover
@@ -420,7 +441,7 @@ Criar pasta
 Criar ficheiro
 Nome da pasta:
 Nome do ficheiro:
-Nova Pasta
+Nova pasta
 Novo ficheiro
 Erro ao criar a pasta
 Erro ao criar ficheiro
@@ -449,21 +470,21 @@ Mover
 Eliminar
 Info
 7300
-Separar ficheiro
-&Separar para:
-Separar por &volumes, bytes:
-A separar...
-Confirmar separação
-Quer mesmo separar o ficheiro em {0} volumes?
+Dividir ficheiro
+&Dividir para:
+Dividir por &volumes, bytes:
+A dividir...
+Confirmar divisão
+Quer mesmo dividir o ficheiro em {0} volumes?
 O tamanho do volume tem de ser inferior ao tamanho do ficheiro original
 Tamanho do volume incorrecto
-Tamanho do volume especificado: {0} bytes.\nQuer mesmo separar o arquivo nestes volumes?
+Tamanho do volume especificado: {0} bytes.\nQuer mesmo dividir o arquivo nestes volumes?
 7400
 Combinar ficheiros
 &Combinar para:
 A combinar...
 Seleccione apenas o primeiro ficheiro
-Não foi possivel apagar o ficheiro como parte do ficheiro dividido
+Não foi possivel detectar o ficheiro como parte do ficheiro dividido
 Não foi possível encontrar mais do que uma parte do ficheiro dividido
 7500
 A calcular o checksum...
@@ -472,24 +493,41 @@ CRC checksum para dados:
 CRC checksum para dados e nome:
 7600
 Desempenho
-Utilização de Memória:
+Utilização de memória:
 A comprimir
 A descomprimir
 Desempenho
-Desempenho Total
+Desempenho total
 Actual
 Resultante
 Utilização CPU
 Desemp. / Utiliza.
 Passagens:
 7700
-Link
-Link
-Link de:
-Link para:
+Ligação
+Ligação
+Ligação de:
+Ligação para:
 7710
-Link Tipo
-Link do Disco Rígido
-Link do Ficheiro Simbólico
-Link do Directório Simbólico
-Directório de Junção
+Tipo de ligação
+Ligação física
+Ligação do ficheiro simbólico
+Ligação do directório simbólico
+Directório de junção
+7800
+Pedido de utilização de memória
+Alterar o limite permitido para as operações seguintes
+&Repetir a ação selecionada para a operação atual
+Action
+7810
+A operação foi bloqueada pelo 7-Zip.
+A operação requer uma grande quantidade de memória (RAM).
+tamanho de utilização de memória necessário
+limite de utilização de memória permitido
+limite de utilização de memória definido pelo 7-Zip
+Tamanho da RAM
+Quantidade máxima de utilização de memória RAM permitida para descompactar arquivos:
+7820
+&Permitir a descompactação de arquivos
+&Ignorar a descompactação de arquivos
+A descompactação do arquivo foi ignorada.

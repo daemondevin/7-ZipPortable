@@ -1,5 +1,5 @@
 ﻿;!@Lang2@!UTF-8!
-;  3.12 : KAD-Korvigelloù An Drouizig (drouizig.org).
+;  3.12 : KAD-Korvigelloù An Drouizig
 ;
 ;
 ;
@@ -204,7 +204,7 @@ Diskouez al &linennoù kael
 
 2900
 Keloù
-Digoust eo ar meziant 7-Zip. Mar plij deoc'h 7-zip ha mar fell deoc'h skoazellañ ar raktres-mañ e c'hellit donezoniñ argant da 7-Zip.
+Digoust eo ar meziant 7-Zip.
 3000
 
 N'eus fazi ebet

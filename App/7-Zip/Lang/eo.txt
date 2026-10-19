@@ -204,7 +204,7 @@ Montru &kradliniojn
 Uzu &grandajn memorpaĝojn
 2900
 Informo
-7-Zip estas senpaga programo. Tamen, vi povas subteni evoluadon de 7-Zip per enregistriĝo.
+7-Zip estas senpaga programo.
 3000
 
 Eraroj ne trovitaj

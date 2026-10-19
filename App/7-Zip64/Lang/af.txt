@@ -204,7 +204,7 @@ Wys &roosterlyne
 
 2900
 Aangaande 7-Zip
-7-Zip is gratis programmatuur. Indien u egter so baie van 7-Zip hou dat u die verdere ontwikkeling wil ondersteun, registreer dan asb. met 'n geldelike donasie aan die 7-Zip Projek.
+7-Zip is gratis programmatuur.
 3000
 
 Daar is geen foute nie

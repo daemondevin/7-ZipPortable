@@ -1,5 +1,5 @@
 ﻿;!@Lang2@!UTF-8!
-;  4.53 : 2007-12-26 : Pathanisation Project : pathanisation.pakhtosoft.com
+;  4.53 : 2007-12-26 : Pathanisation Project
 ;
 ;
 ;

@@ -2,9 +2,9 @@
 ;  3.08 : Ari Ryynanen
 ;  4.30 : Jarko P.
 ;  4.42 : Juhani Valtasalmi
-;  9.35b : T.Sakkara
-;  15.05 : 2015-08-07 : Lauri Kenttä
-;
+;  9.35 : T.Sakkara
+; 15.05 : 2015-08-07 : Lauri Kenttä
+; 19.00 : 2020-12-28 : Sampo Hippeläinen
 ;
 ;
 ;
@@ -31,11 +31,11 @@ Kyllä k&aikkiin
 E&i kaikkiin
 Pysäytä
 Aloita uudelleen
-&Tausta-ajona
-&Normaali prioriteetti
-&Pysäytä
-Pysäytetty
-Keskeytetäänkö toiminto?
+&Tausta
+&Edusta
+&Tauko
+Tauolla
+Peruutetaanko toiminto?
 500
 &Tiedosto
 &Muokkaa
@@ -54,24 +54,24 @@ Nimeä &uudelleen
 &Siirrä...
 &Poista
 &Jaa osiin...
-&Yhdistä jaetut...
+&Yhdistä tiedostoja...
 &Ominaisuudet
-Ku&vaus
+Komme&nttti...
 Laske tarkiste
-Erot
+Ero
 Luo kansio
 Luo tiedosto
 &Lopeta
 Linkitä
-Vaihtoehtoiset tietovirrat
+Vaihtoehtoiset virrat
 600
 V&alitse kaikki
 Poista &valinnat
 &Käänteinen valinta
 Valitse...
 Poista valinta...
-Valitse lajeittain
-Poista valinta lajeittain
+Valitse tyypeittäin
+Poista valinta tyypeittäin
 700
 Suu&ret kuvakkeet
 &Pienet kuvakkeet
@@ -79,11 +79,11 @@ Suu&ret kuvakkeet
 &Tiedot
 730
 Alkuperäinen järjestys
-Kansioiden sisältö luetteloituna
-&Kaksi panelia
-&Työkalupalkki
+Tasainen näkymä
+&Kaksi paneelia
+&Työkalupalkit
 Avaa pääkansio
-Avaa yläkansio
+Yksi taso ylöspäin
 Kansiohistoria...
 P&äivitä
 Automaattipäivitys
@@ -93,7 +93,7 @@ Vakiopalkki
 Suuret painikkeet
 Näytä painiketekstit
 800
-&Lisää kansio Suosikkeihin
+&Lisää kansio suosikkeihin
 Kirjanmerkki
 900
 &Asetukset...
@@ -113,32 +113,32 @@ Luotu
 Käytetty
 Muokattu
 Kiinteä
-Kuvailtu
-Suojaus
-Jaa ennen
-Jaa jälkeen
+Kommentoitu
+Salattu
+Jako ennen
+Jako jälkeen
 Sanakirja
-Tarkiste
-Laji
-Vastakohta
+
+Tyyppi
+Anti
 Menetelmä
-Isäntäjärjestelmä
+Isäntä OS
 Tiedostojärjestelmä
 Käyttäjä
 Ryhmä
-Lohkoja
-Kuvaus
-Kohta
+Lohko
+Kommentti
+Sijainti
 Polun etuliite
-Kansioita
-Tiedostoja
+Kansiot
+Tiedostot
 Versio
-Nimi
-Jaettu osiin
+Osa
+Moniosainen
 Siirtymä
 Linkit
 Lohkot
-Nimet
+Osat
 
 64-bittinen
 Big-endian
@@ -155,14 +155,14 @@ Sektorikoko
 Tila
 Symbolinen linkki
 Virhe
-Aseman koko
+Kokonaiskoko
 Vapaata tilaa
-Varausyksikön koko
+Klusterin koko
 Nimi
 Paikallinen nimi
 Palveluntarjoja
 NT-suojaukset
-Vaihtoehtoinen tietovirta
+Vaihtoehtoinen virta
 Muu
 Poistettu
 On kansiorakenne
@@ -173,9 +173,9 @@ Virheet
 Virheet
 Varoitukset
 Varoitus
-Tietovirrat
-Vaihtoehtoiset tietovirrat
-Vaihtoehtoisten tietovirtojen koko
+Virrat
+Vaihtoehtoiset virrat
+Vaihtoehtoisten virtojen koko
 Näennäiskoko
 Pakkaamaton koko
 Fyysinen koko
@@ -193,29 +193,34 @@ Kiinteä linkki
 iNode
 
 Vain luku
+
+Kopioi linkki
+
+
+Metatiedot muuttuneet
 2100
 Asetukset
 Kieli
 Kieli:
-Muokkausohjelmat
-&Tekstieditori:
-&Erojen etsintä:
+Editori
+&Editori:
+&Ero:
 2200
-Järjestelmäliitännät
-Liitä 7-Zip seuraaviin tiedostotyypeihin:
+Järjestelmä
+Kytke 7-Zip seuraaviin tiedostotyypeihin:
 Kaikki käyttäjät
 2301
-Liitä 7-Zip järjestelmän valikoihin.
-Ryhmitetty järjestelmävalikko
-Järjestelmävalikon sisältö:
-Näytä järjestelmävalikon kuvakkeet
+Kytke 7-Zip järjestelmän valikoihin.
+Ryhmitetty kontekstivalikko
+Kontekstivalikon sisältö:
+Näytä kontekstivalikon kuvakkeet
 2320
 <Kansio>
 <Paketti>
 Avaa
 Pura...
 Lisää pakettiin...
-Eheystarkastus
+Eheystarkistus
 Pura tänne
 Pura kansioon {0}
 Lisää pakettiin {0}
@@ -230,9 +235,9 @@ Kansiot
 Käytä vain siirrettäville tietovälineille
 Määritä väliaikaistiedostojen sijainti.
 2500
-Tiedostoikkuna
-Näytä &yläkansion symboli
-Näytä &aidot tiedostokuvakkeet
+Asetukset
+Näytä ".." merkki
+Näytä oike&at tiedostokuvakkeet
 Näytä &järjestelmävalikko
 &Valitse koko rivi
 Näytä &ruudukko
@@ -241,26 +246,26 @@ Vaihtoehtoinen valintojen &esitystapa
 Käytä &suuria muistisivuja
 2900
 Tietoja
-7-Zip on ilmaisohjelmisto.
+7-Zip on vapaa ohjelmisto.
 3000
-Ei riittävästi muistia toimintoa varten
+Järjestelmä ei pysty varaamaan tarvittavaa muistimäärää.
 Ei virheitä.
-{0} tiedosto(a) valittu
-Ei voida luoda kansioita '{0}.'
-Tätä pakettia ei voi päivittää.
-Tiedoston '{0}' pakkausta ei voi purkaa.
-Ei voi avata suojattua pakettia '{0}'. Väärä salasana?
+{0} kohde(tta) valittu
+Kansiota '{0}' ei voida luoda
+Tämä pakkaus ei tue päivitystoimintoja.
+Tiedostoa '{0}' ei voi avata pakkauksena.
+Salattua pakkausta '{0}' ei voi avata. Väärä salasana?
 Pakkaustapaa ei tueta
 Tiedosto {0} on jo olemassa
 Tiedostoa '{0}' on muutettu.\nHaluatko päivittää paketin?
-Ei voida päivittää tiedostoa \n'{0}'.
-Editoria ei voida käynnistää.
+Tiedostoa\n'{0}' ei voi päivittää.
+Muokkainta ei voida käynnistää.
 Tiedosto vaikuttaa haittaohjelmalta, sillä sen nimi sisältää peräkkäisiä välilyöntejä.
-Toimintoa ei voi suorittaa kansiosta, jonka nimi on pitkä.
+Toimintoa ei voi suorittaa kansiosta, jonka polku on pitkä.
 Valitse yksi tiedosto
 Valitse vähintään yksi tiedosto
 Liian monta kohdetta.
-Ei voida avata tiedostoa {0}-pakettina
+Tiedostoa ei voi avata {0}-pakettina.
 Tiedosto on avattu {0}-pakettina
 Paketti on auki eri alkukohdasta (offset)
 3300
@@ -274,11 +279,11 @@ Poistetaan
 Lisätään
 Päivitetään
 Analysoidaan
-Kopioidaan
+Monistetaan
 Pakataan uudestaan
 Ohitetaan
 Poistetaan
-Luodaan otsikkoa
+Otsikon luonti
 3400
 Pura
 &Pura kansioon
@@ -286,19 +291,22 @@ Määritä puretuille tiedostoille sijainti.
 3410
 Polut:
 Täydet polut
-Ei polkuja (vain nimi)
+Ei polunnimiä
 Absoluuttiset polut
 Suhteelliset polut
 3420
-Samannimiset tiedostot:
+Ylikirjoitustila:
 Kysy tapauskohtaisesti
-Korvaa
-Ohita
+Korvaa ilman kehotusta
+Ohita nykyiset tiedostot
 Uudelleennimeä automaattisesti
 Uudelleennimeä entiset automaattisesti
 3430
 Estä pääkansion kahdennus
-Palauta tiedostojen suojaukset
+Palauta tiedostojen suojaus
+3440
+Levitä Zone.Id -virtaa:
+Office-tiedostoille
 3500
 Vahvista tiedoston korvaus
 Kansiossa on jo samanniminen tiedosto.
@@ -308,10 +316,10 @@ tällä tiedostolla?
 &Uudelleennimeä automaattisesti
 3700
 Tiedoston '{0}' pakkaustapaa ei tueta.
-Sisältövirhe tiedostossa '{0}'. Tiedosto on viottunut.
+Sisältövirhe tiedostossa '{0}'. Tiedosto on vioittunut.
 Tiedoston '{0}' eheystarkistus epäonnistui. Tiedosto on vioittunut.
-Virhe avattaessa suojattua tiedostoa '{0}'. Väärä salasana?
-Tarkistevirhe avattaessa suojattua tiedostoa '{0}'. Väärä salasana?
+Virhe avattaessa salattua tiedostoa '{0}'. Väärä salasana?
+Tarkistevirhe avattaessa salattua tiedostoa '{0}'. Väärä salasana?
 3710
 Väärä salasana?
 3721
@@ -330,14 +338,14 @@ Pakkauksen alkua ei vahvistettu
 
 
 
-Toiminto ei tuettu
+Toimintoa ei tueta
 3800
 Syötä salasana
 Syötä salasana:
 Toista salasana:
 Näytä &salasana
 Salasanat eivät täsmää
-Salasanassa voi käyttää numeroita ja erikoismerkkejä, mutta EI skandinaavisia kirjaimia.
+Käytä salasanassa vain englanninkielisiä kirjaimia, numeroita ja erikoismerkkejä (!, #, $, ...).
 Liian pitkä salasana
 Salasana
 3900
@@ -353,28 +361,28 @@ Paketteja:
 Lisää pakettiin
 &Paketti:
 &Päivitystapa:
-Pakkaus&:
+Pakka&usmuoto:
 Pakkauksen &taso:
 Pakkaus&menetelmä:
 &Sanakirjan koko:
-&Sanan koko:
-Lohkokoko
-Prosessorisäikeet:
+&Sanakoko:
+Lohkokoko:
+Suoritinsäikeet:
 &Parametrit:
 Lisäasetukset
-Luo itsepurkautuva paketti
-Pakkaa yhteiset tiedostot
-Suojaus
+Luo itsepurkava paketti
+Pakkaa auki olevat tiedostot
+Salaus
 Salausalgoritmi
-Tiedosto&nimien suojaus
-Pakkaamiseen käytettävä muisti:
-Purkamiseen käytettävä muisti:
-Poista pakkauksen jälkeen
+Salaa tiedosto&nimet
+Pakkaamiseen vaadittava muisti:
+Purkamiseen vaadittava muisti:
+Poista tiedostot pakkaamisen jälkeen
 4040
 Tallenna symboliset linkit
-Tallenna kiinteät linkit
-Tallenna vaihtoehtoiset tietovirrat
-Tallenna tiedostojen suojaukset
+Tallenna kovat linkit
+Tallenna vaihtoehtoiset virrat
+Tallenna tiedostojen suojaustiedot
 4050
 Ei pakkausta
 Nopein
@@ -390,8 +398,19 @@ Synkronoi
 4070
 Selaa
 Kaikki tiedostot
-Muuttuva
+Irrallinen
 Kiinteä
+4080
+Aika
+Aikaleiman tarkkuus:
+Tallenna muokkausaika
+Tallenna luontiaika
+Tallenna viimeisin käyttöaika
+Aseta pakkausaika viimeisimpään tiedostoaikaan
+Älä muuta lähdetiedostojen viimeistä käyttöaikaa
+4090
+sek
+ns
 6000
 Kopioi
 Siirrä
@@ -401,7 +420,7 @@ Kopioidaan...
 Siirretään...
 Nimetään uudelleen...
 Valitse kohdekansio.
-Toiminto ei ole tuettu.
+Toiminto ei ole tuettu tälle kansiolle.
 Virhe uudelleennimettäessä tiedostoa tai kansiota
 Vahvista tiedoston kopioiminen
 Kopioidaanko tiedostot pakettiin
@@ -414,7 +433,7 @@ Poistetaanko kansio '{0}' ja kaikki sen sisältö?
 Poistetaanko nämä {0} kohdetta?
 Poistetaan...
 Virhe poistettaessa tiedostoa tai kansiota
-Roskakoriin ei voida siirtää tiedostoa, jolla on pitkä nimi
+Roskakoriin ei voida siirtää tiedostoa, jolla on pitkä polku
 6300
 Luo uusi kansio
 Luo uusi tiedosto
@@ -433,12 +452,12 @@ Maski:
 6600
 Ominaisuudet
 Kansiohistoria
-Tietoja
+Diagnostiikkaviestit
 Viesti
 7100
 Tietokone
 Verkko
-Dokumentit
+Asiakirjat
 Järjestelmä
 7200
 Lisää
@@ -475,21 +494,21 @@ Nopeustesti
 Muistin käyttö:
 Pakkaaminen
 Purkaminen
-Luokitus
-Kokonaisluokitus
-Nykyinen
 Tulos
+Kokonaistulos
+Nykyinen
+Mitattu
 Suoritinkäyttö
 Luokitus / käyttö
-Läpäisty:
+Kierrokset:
 7700
 Linkitys
 Linkitä
 Linkitys kohteesta:
 Linkitys kohteeseen:
 7710
-Linkkilaji
-Kiinteä linkki
+Linkin tyyppi
+Kova linkki
 Symbolinen tiedostolinkki
 Symbolinen kansiolinkki
 Kansioliitos

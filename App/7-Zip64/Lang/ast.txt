@@ -204,7 +204,7 @@ Amosar les llinies de la &cuadrícula
 
 2900
 Al rodiu 7-Zip
-7-Zip ye software llibre. De toos moos, tú pues sofitar el desendolcu de 7-Zip rexistrándote.
+7-Zip ye software llibre.
 3000
 
 Ensín errores

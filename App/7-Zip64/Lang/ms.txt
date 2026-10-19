@@ -204,7 +204,7 @@ Perlihatkan garisan grid
 Gunakan muka surat memori yang &besar
 2900
 Perihal 7-Zip
-7-Zip adalah perisian percuma. Sokong pembangunan 7-Zip dengan melakukan pendaftaran.
+7-Zip adalah perisian percuma.
 3000
 
 Tidak ada ralat

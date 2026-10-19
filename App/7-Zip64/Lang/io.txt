@@ -204,7 +204,7 @@ Montrar &streki separanta
 
 2900
 Pri progamo...
-7-Zip esas gratuita programo. Tamen, vu povas mantenar developado di 7-Zip per enregistrigesar.
+7-Zip esas gratuita programo.
 3000
 
 Erori ne es trovita

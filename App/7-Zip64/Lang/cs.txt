@@ -2,9 +2,9 @@
 ;  4.30 : Milan Hrubý
 ;  4.33 : Michal Molhanec
 ;  9.07 : Jiří Malák
-;
-;
-;
+; 15.00 : Kryštof Černý
+; 23.01 : 2023-06-20 : Patrik (Pa4k) Špaňo
+; 24.08 : 2024-08-30 : Jirka V. (paradroid)
 ;
 ;
 ;
@@ -62,6 +62,8 @@ Porovnat soubory
 Vytvořit složku
 Vytvořit soubor
 &Konec
+Odkázat
+&Alternativní toky
 600
 Vybrat &vše
 Zrušit výběr vše
@@ -78,12 +80,13 @@ Zrušit výběr podle typu
 730
 &Bez třídění
 "Ploché" zobrazení
-&2 panely
+&2 Panely
 Nástrojové lišty
 Otevřít kořenovou složku
 O úroveň výš
 Historie složek...
 &Obnovit
+Automatické obnovení
 750
 Archivační lišta
 Standardní lišta
@@ -95,6 +98,8 @@ Záložka
 900
 &Možnosti...
 &Zkouška výkonu
+910
+Vymazat dočasné soubory
 960
 &Obsah...
 O progr&amu 7-Zip...
@@ -107,15 +112,15 @@ Velikost
 Komprimovaná velikost
 Atributy
 Vytvořen
-Použit
+Použito
 Změněn
 Pevný
 S poznámkou
 Zakódovaný
-Rozdělen do
-Rozdělen od
+Rozdělen před
+Rozdělen po
 Slovník
-CRC
+
 Typ
 Anti
 Metoda
@@ -139,7 +144,7 @@ Dílů
 
 64-bit
 Big-endian
-Pocesor
+Procesor
 Fyzická velikost
 Velikost hlaviček
 Kontrolní součet
@@ -158,6 +163,43 @@ Velikost clusteru
 Označení
 Místní název
 Poskytovatel
+NT Zabezpečení
+Alternativní toky
+Aux
+Odstraněný
+Je strom
+
+
+Typ chyby
+Chyby
+Chyby
+Upozornění
+Upozornění
+Toky
+Alternativní toky
+Velikost alternativních toků
+Virtuální velikost
+Rozbalená velikost
+Celková fyzická velikost
+Index svazku
+PodTyp
+Krátký komentář
+Kódová stránka
+
+
+
+Velikost zakončení
+Velikost vloženého prvku
+Odkaz
+Pevný odkaz
+iNode
+
+Jen pro čtení
+
+Zkopírovat odkaz
+
+
+Metadata změněna
 2100
 Možnosti
 Jazyk
@@ -168,10 +210,12 @@ Program pro &porovnání souborů:
 2200
 Systém
 Asociovat 7-Zip s:
+Všichni uživatelé
 2301
 &Integrovat 7-Zip do kontextového menu
 S&tupňovité kontextové menu
 &Položky kontextového menu:
+Ikony v kontextovém menu
 2320
 <Složka>
 <Archiv>
@@ -204,7 +248,7 @@ Otevřít položku jedním kliknutím
 &Používat velké stránky paměti
 2900
 O programu 7-Zip
-7-Zip je svobodný software. Nicméně můžete podpořit jeho vývoj registrací.
+7-Zip je svobodný software
 3000
 Systém nemůže přidělit požadovanou velikost paměti
 Nedošlo k žádným chybám
@@ -223,12 +267,25 @@ Operace nemůže být provedena ze složky s dlouhou cestou.
 Musíte vybrat jeden soubor
 Musíte vybrat jeden nebo více souborů
 Příliš mnoho položek
+Nelze otevřít soubor jako {0} archiv
+Soubor je otevřen jako {0} archiv
+Archiv je otevřen s offsetem
 3300
 Rozbalování
 Komprimování
-Konrola
+Kontrola
 Otevírání...
 Prohledávání...
+Odebírání
+3320
+Přidávání
+Aktualizování
+Analyzování
+Replikace
+Přebalování
+Přeskakování
+Odstraňování
+Vytváření hlavičky
 3400
 Rozbalit
 &Rozbalit do:
@@ -237,6 +294,8 @@ Vyberte umístění pro rozbalené soubory.
 Cesty
 Plné cesty
 Bez cesty
+Absolutní cesty
+Relativní cesty
 3420
 Způsob přepisování
 Zeptat se před přepisem
@@ -244,6 +303,12 @@ Přepsat bez výzvy
 Přeskočit existující soubory
 Automatické přejmenování
 Automatické přejmenování existujících souborů
+3430
+Eliminovat duplikaci kořenové složky
+Obnovit zabezpečení souborů
+3440
+Propagovat Zone.Id stream:
+Pro soubory Office
 3500
 Potvrzení nahrazení souboru
 Cílová složka již obsahuje zpracovaný soubor.
@@ -257,13 +322,32 @@ Chyba dat v '{0}'. Soubor je poškozený.
 Chyba CRC v '{0}'. Soubor je poškozený.
 Chyba dat v zakódovaném souboru '{0}'. Chybné heslo?
 Chyba CRC v zakódovaném souboru '{0}'. Chybné heslo?
+3710
+Špatné heslo?
+3721
+Nepodporovaná komprimační metoda
+Chyba dat
+CRC selhal
+Nedostupná data
+Neočekávaný konec dat
+Jsou přítomny nějaké data po konci payload dat
+Není archiv
+Chyba hlavičky
+Špatné heslo
+3763
+Nedostupný start archivu
+Nepotvrzený start archivu
+
+
+
+Nepodporovaná funkce
 3800
 Vložit heslo
 Vložit heslo:
 Potvrzení hesla:
 Zobrazit he&slo
 Heslo nesouhlasí
-Pro heslo použíjte pouze anglická písmena, číslice a speciální znaky (!, #, $, ...)
+Pro heslo použijte pouze anglická písmena, číslice a speciální znaky (!, #, $, ...)
 Heslo je příliš dlouhé
 Heslo
 3900
@@ -295,8 +379,14 @@ Metoda zakódování:
 Zakódovat &názvy souborů
 Spotřeba paměti pro zabalení:
 Spotřeba paměti pro rozbalení:
+Odstranit soubory po zabalení
+4040
+Uložit symbolické odkazy
+Uložit pevné odkazy
+Uložit alternativní datové toky
+Uložit zabezpečení souborů
 4050
-Skladovací
+Bez komprese
 Nejrychlejší
 Rychlá
 Normální
@@ -312,6 +402,17 @@ Procházet
 Všechny soubory
 Podle velikosti souboru
 Pevný
+4080
+Čas
+Přesnost časové značky:
+Uložit čas úpravy
+Uložit čas vytvoření
+Uložit čas posledního přístupu
+Nastavit čas archivu dle času nejnovějšího souboru
+Neměnit čas posledního přístupu u zdrojových souborů
+4090
+sek
+ns
 6000
 Kopírovat
 Přesunout
@@ -402,3 +503,31 @@ Výsledné
 Využití procesoru
 Výkon / Využití
 Průchodů:
+7700
+Odkaz
+Propojit
+Odkázat z:
+Odkázat na:
+7710
+Typ odkazu
+Pevný odkaz
+Symbolický odkaz souboru
+Symbolický odkaz složky
+Spojení složek
+7800
+Požadavek na využití paměti
+Změna povoleného limitu pro další operace
+&Zopakování vybrané akce pro aktuální operaci
+Akce
+7810
+Operace byla zablokována programem 7-Zip.
+Operace vyžaduje velké množství paměti (RAM).
+požadovaná velikost využití paměti
+povolený limit využití paměti
+limit využití paměti nastavený systémem 7-Zip
+velikost paměti RAM
+Maximální povolené využití paměti RAM pro rozbalování archivů:
+7820
+&Povolit rozbalování archivů
+Přerušit rozbalování archivů
+Rozbalování archivu bylo přeskočeno.

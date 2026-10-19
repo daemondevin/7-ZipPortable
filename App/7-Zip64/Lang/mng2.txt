@@ -1,12 +1,12 @@
 ﻿;!@Lang2@!UTF-8!
-; 7-Zip 9.20
+; 9.20:
 ; Saqirilatu Mongolqileb
-; QQ:136087084 Email:saqirilatu@126.com
-; Mongol soft QQ bulug Ⅰ: 39338772 Ⅱ:38803882
-; Toli Mongolian IME 
-; http://hi.baidu.com/saqirilatuu/item/9438213716f316ebe7bb7a8d
-;last updated: 2013-12-11
+; last updated: 2013-12-11
 ; Update and Spelling corrected Bayarsaikhan
+;
+;
+;
+;
 ;
 ;
 ;
@@ -204,7 +204,7 @@ ID
       (&L)
 2900
 7-Zip  
-7-Zip            7-Zip           Ⅰ39338772  Ⅱ 38803882       QQ 136087084 Email: saqirilatu@126.com
+
 3000
       
  

@@ -1,6 +1,6 @@
 ﻿;!@Lang2@!UTF-8!
 ;       : Ara Bakhtiar
-;  4.66 : Ara Qadir : http://www.chawg.org
+;  4.66 : Ara Qadir
 ;
 ;
 ;
